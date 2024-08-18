@@ -1,12 +1,9 @@
 
 
-<div style="display:flex;   align-items: center;    justify-content: center;">
-<img src="https://yashpatel521.github.io/yashpatel521/assets/images/slider/banner-21.png" width="200"/>
-    <div style="margin-left:20px;" align="center" >
-        <p style="font-size:30px">Hi,</p>
-        <p style="font-size:30px">I’m Yash Patel</p>
-        <p style="font-size:30px">a Full Stack Developer.</p>
-    </div>
+<div style="margin-left:20px;" align="center" >
+    <p style="font-size:30px">Hi,</p>
+    <p style="font-size:30px">I’m Yash Patel</p>
+    <p style="font-size:30px">a Full Stack Developer.</p>
 </div>
 
 
