@@ -76,7 +76,7 @@ title="React" alt="React" width="40" height="40"/>&nbsp;
 src="https://avatars.githubusercontent.com/u/20165699?s=200&v=4"
 title="React" alt="React" width="40" height="40"/>&nbsp;
 <img 
-src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_light_prisma_icon_130444.png"
+src="https://w7.pngwing.com/pngs/929/464/png-transparent-prisma-hd-logo.png"
 title="React" alt="React" width="40" height="40"/>&nbsp;
 </p>
 
