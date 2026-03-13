@@ -7,7 +7,8 @@ const FRAME_COUNT = 120;
 
 function getFramePath(index: number) {
   const paddedIndex = index.toString().padStart(3, "0");
-  return `/sequence/frame_${paddedIndex}_delay-0.066s.png`;
+  const basePath = "/yashpatel521"; // GitHub Pages subpath
+  return `${basePath}/sequence/frame_${paddedIndex}_delay-0.066s.png`;
 }
 
 export default function ScrollyCanvas({ children }: { children?: React.ReactNode }) {

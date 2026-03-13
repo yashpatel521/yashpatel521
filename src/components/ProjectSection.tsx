@@ -14,13 +14,15 @@ interface ProjectItem {
   link?: string;
 }
 
+const basePath = "/yashpatel521";
+
 const projects: ProjectItem[] = [
   {
     id: 1,
     title: "SmartOps – AI Automation SaaS Platform",
     category: "Oct 2024 – Nov 2025",
     description: "AI-powered SaaS platform automating business workflows, ticket routing, and operational forecasting. Integrated OpenAI API for AI-driven automation, reducing operational overhead by 45% via an event-driven architecture.",
-    image: "/projects/smartops.png",
+    image: `${basePath}/projects/smartops.png`,
     tech: ["Next.js", "Node.js", "Redis", "PostgreSQL", "OpenAI"],
   },
   {
@@ -28,7 +30,7 @@ const projects: ProjectItem[] = [
     title: "Enterprise AI & Real-Time Data Platform",
     category: "Oct 2024 – Nov 2025",
     description: "A scalable microservices-based platform enabling real-time data analytics, multi-tenant workflows, and AI-driven decision making. Optimized for performance and secure data handling.",
-    image: "/projects/1.png",
+    image: `${basePath}/projects/1.png`,
     tech: ["Node.js", "Hasura", "AWS", "GraphQL"],
   },
   {
@@ -36,7 +38,7 @@ const projects: ProjectItem[] = [
     title: "Sixywin",
     category: "May 2025 – Sep 2025",
     description: "A web-based lottery-style game where users pick 6 numbers and spin daily to win virtual coins. Features daily spins, leaderboards, and rewarded ads.",
-    image: "/projects/sixywin.png",
+    image: `${basePath}/projects/sixywin.png`,
     tech: ["React.js", "Supabase", "Tailwind CSS", "Vercel"],
   },
   {
@@ -44,7 +46,7 @@ const projects: ProjectItem[] = [
     title: "Ai Translation App",
     category: "Mar 2024 – Jul 2024 (Tav College)",
     description: "A translation application comparing multiple AI models (ChatGPT, Gemini, DeepL) integrating image processing features to extract and translate text from images.",
-    image: "/projects/aitranslation.png",
+    image: `${basePath}/projects/aitranslation.png`,
     tech: ["Express.js", "TypeORM", "TypeScript", "SQLite"],
     link: "https://github.com/yashpatel521/translation-app",
   },
@@ -53,7 +55,7 @@ const projects: ProjectItem[] = [
     title: "Blog App",
     category: "Jan 2024 – Jul 2024 (Tav College)",
     description: "Developed a full-stack blog application for managing notes, demonstrating integration between frontend and backend. Designed a user-friendly interface with seamless data handling for an optimal user experience.",
-    image: "/projects/2.png",
+    image: `${basePath}/projects/2.png`,
     tech: ["Next.js", "Prisma ORM"],
     link: "https://github.com/yashpatel521/nextjs-blog",
   },
@@ -62,7 +64,7 @@ const projects: ProjectItem[] = [
     title: "Project Management System",
     category: "Feb 2024 – Jul 2024 (Tav College)",
     description: "Developed both backend and frontend architecture for a cross-platform desktop software (Windows, Mac, Linux) utilizing ElectronJS and Node.js.",
-    image: "/projects/3.png",
+    image: `${basePath}/projects/3.png`,
     tech: ["Node.js", "Next.js", "ElectronJS", "MySQL"],
   }
 ];
