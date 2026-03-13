@@ -3,12 +3,11 @@
 import { useEffect, useRef, useState } from "react";
 import { useScroll, useTransform, useMotionValueEvent } from "framer-motion";
 
-const basePath = process.env.NODE_ENV === "production" ? "/yashpatel521" : "";
 const FRAME_COUNT = 120;
 
 function getFramePath(index: number) {
   const paddedIndex = index.toString().padStart(3, "0");
-  return `${basePath}/sequence/frame_${paddedIndex}_delay-0.066s.png`;
+  return `/sequence/frame_${paddedIndex}_delay-0.066s.png`;
 }
 
 export default function ScrollyCanvas({ children }: { children?: React.ReactNode }) {
