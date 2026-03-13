@@ -1,67 +1,59 @@
-# High-End Scrollytelling Portfolio
+# 👋 Hi, I'm Yash Patel 
 
-A cinematic, performance-driven personal portfolio built with **Next.js 14**, **Framer Motion**, and **HTML5 Canvas**. This project focuses on "Scrollytelling"—binding user scroll progress to high-fidelity animations to create an immersive narrative.
+### **Full-Stack Engineer | AI Automation Architect | Cloud Enthusiast**
 
-![Portfolio Preview (Hero)](C:\Users\Admin\.gemini\antigravity\brain\a1325cae-fb7f-4a8a-8227-c5d417eb96ae\portfolio_hero_section_1773359730021.png)
-
-## 🚀 Vision
-The goal of this portfolio was to move away from static, traditional resumes. By leveraging scroll-linked image sequences and interactive timelines, the site effectively "tells the story" of my professional journey in Full-Stack Engineering, AI Automation, and Cloud Architectures.
-
-## 🛠️ Tech Stack
-- **Framework**: [Next.js 14](https://nextjs.org/) (App Router)
-- **Language**: [TypeScript](https://www.typescriptlang.org/)
-- **Animation**: [Framer Motion](https://www.framer.com/motion/)
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
-- **Rendering**: [HTML5 Canvas](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API) (for sequence scrubbing)
-- **Icons**: [Lucide React](https://lucide.dev/)
-- **Deployment**: GitHub Pages (Static HTML Export)
-
-## ✨ Core Features
-
-### 🎞️ Scrollytelling Engine
-- **Canvas Renderer**: A high-performance `<canvas>` engine that scrubs through 120 high-fidelity frames with zero flicker.
-- **Dynamic Overlays**: Contextual typography that fades and transforms based on precise scroll percentages.
-
-### ⏳ Interactive Resume Timeline
-- **Neon Logic**: A vibrant cyan animated timeline track with a glowing arrowhead that guides the user downwards.
-- **Connected History**: Experience and Education cards are structurally linked to the central timeline with horizontal connectors and neon glowing dots that react to hovers.
-
-### 🌳 Branching Expertise Tree
-- Unlike a standard skills list, my core expertise is visualized as a horizontal branching tree sprouting from the main timeline, categorizing skills into **Frontend**, **Backend**, **Databases**, and **Cloud/AI**.
-
-### 🎨 Custom User Experience
-- **Interactive Cursor**: A custom-coded Framer Motion cursor that morphs and expands when hovering over interactive elements.
-- **Stylized Scrollbar**: A bespoke, translucent cyan rail that replaces the native browser scrollbar.
-
-## 📁 Project Highlights
-Powered by AI-generated dashboard mockups, the projects section showcases:
-- **SmartOps**: AI Automation SaaS Platform.
-- **Enterprise AI Platform**: Real-time data analytics.
-- **Sixywin**: Web-based lottery-style gaming UI.
-- **AI Translation App**: Multi-model language extraction.
-- **Blog & Project Management Systems**: Full-stack application architecture.
-
-## 📦 Getting Started
-
-### Installation
-```bash
-npm install
-```
-
-### Run Locally
-```bash
-npm run dev
-```
-
-### Static Export
-```bash
-npm run build
-```
-
-### Deployment
-```bash
-npm run deploy
-```
+I am a passionate **Full-Stack Engineer** based in Montreal, QC, dedicated to building scalable, high-performance web applications and AI-driven automation systems. I specialize in architecting robust backend infrastructures and crafting immersive, animated frontend experiences.
 
 ---
-Built with ❤️ by **Yash Patel**
+
+### 🚀 **What I Do**
+- **Architecture**: Designing scalable microservices using **Node.js**, **GraphQL**, and **AWS Lambda**.
+- **Specialization**: Implementing **AI-driven automation** and real-time data platforms.
+- **Frontend**: Creating cinematic "scrollytelling" experiences with **Next.js**, **Tailwind CSS**, and **Framer Motion**.
+- **Philosophy**: Driven by reliability, security, and exceptional user experience.
+
+---
+
+### 🛠️ **Core Expertise**
+
+| **Category** | **Technologies** |
+| :--- | :--- |
+| **Frontend** | React, Next.js, TypeScript, Tailwind CSS, Framer Motion |
+| **Backend** | Node.js, PHP, WordPress, GraphQL, Apollo |
+| **Databases** | PostgreSQL, Redis, Hasura, MySQL |
+| **Cloud/AI** | AWS (Lambda, EC2, S3), OpenAI API, Serverless, Microservices |
+
+---
+
+### 💼 **Professional Journey**
+
+- **Freelance Full Stack Engineer** | *Montreal, QC (Oct 2024 - Present)*
+  - Architecting AI-powered automation platforms using serverless frameworks.
+- **Node.js Developer** | *JKSOL INFOTECH (Jul 2021 - Jul 2022)*
+  - Optimized 12+ APIs for 50,000+ concurrent users, reducing lag by 30%.
+- **PHP Developer** | *Differenz System (Dec 2020 - May 2021)*
+  - Deployed 8+ production-ready web applications.
+
+---
+
+### 🎓 **Education**
+- **Diploma in Internet Programming** | *Tav College (2024)*
+- **Bachelor of Technology in IT** | *Uka Tarsadia University (2021)*
+- **French Course** | *Centre pauline julien (Ongoing)*
+
+---
+
+### 🔗 **Connect with Me**
+- **Portfolio**: [yashpatel521.github.io/yashpatel521](https://yashpatel521.github.io/yashpatel521/)
+- **LinkedIn**: [linkedin.com/in/yashpatel521](https://www.linkedin.com/in/yashpatel521/)
+- **Email**: [yash1451999@gmail.com](mailto:yash1451999@gmail.com)
+
+---
+
+### 📈 **GitHub Stats**
+
+![Yash's GitHub stats](https://github-readme-stats.vercel.app/api?username=yashpatel521&show_icons=true&theme=tokyonight)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=yashpatel521&layout=compact&theme=tokyonight)
+
+---
+*"Building the future of enterprise software, one line of code at a time."*
