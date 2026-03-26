@@ -54,9 +54,9 @@ I am a passionate **Full-Stack Engineer** based in Montreal, QC, dedicated to bu
 
 ### 📈 **GitHub Stats**
 
-![Yash's GitHub stats](https://github-readme-stats.vercel.app/api?username=yashpatel521&show_icons=true&theme=tokyonight)
+![Yash's GitHub stats](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=yashpatel521&theme=tokyonight)
 ![Yash's LeetCode stats](https://leetcard.jacoblin.cool/yash521?theme=dark)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=yashpatel521&layout=compact&theme=tokyonight)
+![Top Langs](https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=yashpatel521&theme=tokyonight)
 
 ---
 *"Building the future of enterprise software, one line of code at a time."*
