@@ -55,6 +55,7 @@ I am a passionate **Full-Stack Engineer** based in Montreal, QC, dedicated to bu
 ### 📈 **GitHub Stats**
 
 ![Yash's GitHub stats](https://github-readme-stats.vercel.app/api?username=yashpatel521&show_icons=true&theme=tokyonight)
+![Yash's LeetCode stats](https://leetcode-stats-six.vercel.app/api?username=yash521&theme=tokyonight)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=yashpatel521&layout=compact&theme=tokyonight)
 
 ---
