@@ -46,6 +46,8 @@ I am a passionate **Full-Stack Engineer** based in Montreal, QC, dedicated to bu
 ### 🔗 **Connect with Me**
 - **Portfolio**: [yashpatel521.github.io/yashpatel521](https://yashpatel521.github.io/yashpatel521/)
 - **LinkedIn**: [linkedin.com/in/yash-patel-521p](https://www.linkedin.com/in/yash-patel-521p/)
+- **LeetCode (Repo)**: [github.com/yashpatel521/leetcode](https://github.com/yashpatel521/leetcode)
+- **LeetCode (Profile)**: [leetcode.com/u/yash521](https://leetcode.com/u/yash521/)
 - **Email**: [yash1451999@gmail.com](mailto:yash1451999@gmail.com)
 
 ---
