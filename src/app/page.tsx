@@ -4,6 +4,7 @@ import Timeline from "@/components/Timeline";
 import Experience from "@/components/Experience";
 import Education from "@/components/Education";
 import Projects from "@/components/Projects"; // Skills
+import LeetCode from "@/components/LeetCode";
 import ProjectSection from "@/components/ProjectSection";
 import { Github, Linkedin, Mail } from "lucide-react";
 
@@ -44,6 +45,7 @@ export default function Home() {
       <Timeline>
         <Experience />
         <Education />
+        <LeetCode />
         <Projects /> {/* Actually renders Skills */}
       </Timeline>
 

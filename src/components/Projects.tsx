@@ -30,6 +30,11 @@ const skillCategories: SkillCategory[] = [
     title: "Cloud & AI Integration",
     skills: ["AWS", "OpenAI API", "Serverless", "Microservices"],
   },
+  {
+    id: 5,
+    title: "Problem Solving",
+    skills: ["Data Structures", "Algorithms", "LeetCode", "Logic Tuning"],
+  },
 ];
 
 export default function Skills() {
