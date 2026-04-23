@@ -28,7 +28,7 @@ export default function Home() {
             </p>
           </div>
           <div className="flex gap-4">
-            <a href="https://linkedin.com/in/yashpatel-521p" target="_blank" rel="noreferrer" className="h-12 w-12 rounded-full bg-white/[0.05] border border-white/[0.05] flex items-center justify-center text-zinc-300 transition-all hover:bg-[#0077b5] hover:text-white hover:border-transparent hover:scale-105 active:scale-95">
+            <a href="https://www.linkedin.com/in/yash-patel-521p/" target="_blank" rel="noreferrer" className="h-12 w-12 rounded-full bg-white/[0.05] border border-white/[0.05] flex items-center justify-center text-zinc-300 transition-all hover:bg-[#0077b5] hover:text-white hover:border-transparent hover:scale-105 active:scale-95">
               <Linkedin size={20} />
             </a>
             <a href="mailto:yash1451999@gmail.com" className="h-12 w-12 rounded-full bg-white/[0.05] border border-white/[0.05] flex items-center justify-center text-zinc-300 transition-all hover:bg-red-500 hover:text-white hover:border-transparent hover:scale-105 active:scale-95">
