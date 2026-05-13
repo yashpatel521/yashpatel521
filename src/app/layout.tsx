@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://yashpatel.dev", // Assuming a domain, but keeping it general
+    url: "https://yashpatel521.github.io/yashpatel521/",
     title: "Yash Patel | Motion Designer & Creative Developer",
     description: "Explore the creative portfolio of Yash Patel, specializing in high-end scrollytelling and interactive web experiences.",
     siteName: "Yash Patel Portfolio",
