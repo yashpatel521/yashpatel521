@@ -9,8 +9,41 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Creative Developer Portfolio",
-  description: "High-end scrollytelling personal portfolio",
+  title: "Yash Patel | Motion Designer & Creative Developer",
+  description: "Explore the creative portfolio of Yash Patel, a Motion Designer and Creative Developer specializing in high-end scrollytelling and interactive web experiences.",
+  keywords: [
+    "Yash Patel",
+    "Motion Designer",
+    "Creative Developer",
+    "Portfolio",
+    "Scrollytelling",
+    "Next.js",
+    "WebGL",
+    "Three.js",
+    "Interactive Web Design",
+    "Frontend Engineer",
+    "Animation",
+  ],
+  authors: [{ name: "Yash Patel" }],
+  creator: "Yash Patel",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://yashpatel.dev", // Assuming a domain, but keeping it general
+    title: "Yash Patel | Motion Designer & Creative Developer",
+    description: "Explore the creative portfolio of Yash Patel, specializing in high-end scrollytelling and interactive web experiences.",
+    siteName: "Yash Patel Portfolio",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Yash Patel | Motion Designer & Creative Developer",
+    description: "Explore the creative portfolio of Yash Patel, specializing in high-end scrollytelling and interactive web experiences.",
+    creator: "@yashpatel", // Placeholder or from profile if found
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
