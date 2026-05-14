@@ -98,7 +98,7 @@ export default function ScrollyCanvas({ children }: { children?: React.ReactNode
   }, [imagesLoaded]); // Wait till images load
 
   return (
-    <div ref={containerRef} className="relative h-[500vh] w-full bg-[#121212]">
+    <div ref={containerRef} className="relative h-[500vh] w-full">
       <div className="sticky top-0 h-screen w-full overflow-hidden">
         <canvas
           ref={canvasRef}

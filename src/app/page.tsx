@@ -10,14 +10,14 @@ import { Github, Linkedin, Mail } from "lucide-react";
 
 export default function Home() {
   return (
-    <main className="bg-[#121212] min-h-screen font-sans">
+    <main className="min-h-screen font-sans">
       <div className="relative">
         <ScrollyCanvas />
         <Overlay />
       </div>
 
       {/* Intro block to transition into timeline */}
-      <section className="bg-[#121212] py-24 px-6 md:px-12 lg:px-24 border-b border-white/[0.05]">
+      <section className="py-24 px-6 md:px-12 lg:px-24 border-b border-white/[0.05]">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:items-end justify-between gap-8">
           <div>
             <h3 className="text-3xl md:text-5xl font-bold tracking-tight text-white mb-4">

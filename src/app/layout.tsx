@@ -2,7 +2,6 @@ import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import CustomCursor from "@/components/CustomCursor";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -83,6 +82,9 @@ export const metadata: Metadata = {
   },
 };
 
+import CustomCursor from "@/components/CustomCursor";
+import InteractiveGrid from "@/components/InteractiveGrid";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -91,8 +93,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${inter.variable} font-sans antialiased selection:bg-cyan-500/30 selection:text-cyan-200`}
+        className={`${inter.variable} font-sans antialiased selection:bg-cyan-500/30 selection:text-cyan-200 bg-[#121212]`}
       >
+        <InteractiveGrid />
         <CustomCursor />
         {children}
       </body>

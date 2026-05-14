@@ -71,7 +71,7 @@ const projects: ProjectItem[] = [
 
 export default function ProjectSection() {
   return (
-    <section className="relative z-20 bg-gradient-to-b from-[#121212] via-[#0a0f1c] to-[#050814] py-32 px-6 md:px-12 lg:px-24 border-t border-cyan-500/[0.1]">
+    <section className="relative z-20 bg-gradient-to-b from-transparent via-[#0a0f1c]/80 to-[#050814]/90 py-32 px-6 md:px-12 lg:px-24 border-t border-cyan-500/[0.1]">
       <div className="max-w-7xl mx-auto">
         
         <div className="flex flex-col text-center md:text-left mb-20">

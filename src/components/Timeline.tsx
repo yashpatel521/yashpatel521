@@ -26,7 +26,7 @@ export default function Timeline({ children }: TimelineProps) {
   const arrowOpacity = useTransform(smoothProgress, [0, 0.05, 0.95, 1], [0, 1, 1, 0]);
 
   return (
-    <section ref={containerRef} className="relative w-full py-24 bg-[#121212]">
+    <section ref={containerRef} className="relative w-full py-24">
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24 relative min-h-screen">
         
         {/* The Central Line Background (Track) */}
