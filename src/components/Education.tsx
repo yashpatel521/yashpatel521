@@ -8,6 +8,7 @@ interface EducationItem {
   degree: string;
   institution: string;
   date: string;
+  result?: string;
 }
 
 const education: EducationItem[] = [
@@ -16,18 +17,21 @@ const education: EducationItem[] = [
     degree: "Diploma in Internet Programming",
     institution: "Tav College",
     date: "Mar 2023 - Oct 2024",
+    result: "Score: 90+/100",
   },
   {
     id: 2,
     degree: "Bachelor of Technology in Information Technology",
     institution: "Uka Tarsadia University",
     date: "Aug 2017 - Jun 2021",
+    result: "CGPA: 8.93/10",
   },
   {
     id: 3,
-    degree: "French Course",
-    institution: "Centre pauline julien",
+    degree: "French Language Course (B1)",
+    institution: "Government Class, Montreal",
     date: "Nov 2024 - Sep 2025",
+    result: "Clear B1 Level",
   },
 ];
 
@@ -77,6 +81,11 @@ export default function Education() {
               <h3 className="text-base text-zinc-300 font-light">
                 {edu.degree}
               </h3>
+              {edu.result && (
+                <p className="text-sm text-cyan-400/80 font-medium mt-2">
+                  {edu.result}
+                </p>
+              )}
             </motion.div>
           ))}
         </div>
@@ -110,6 +119,11 @@ export default function Education() {
               <h3 className="text-base text-zinc-300 font-light">
                 {edu.degree}
               </h3>
+              {edu.result && (
+                <p className="text-sm text-cyan-400/80 font-medium mt-2">
+                  {edu.result}
+                </p>
+              )}
             </motion.div>
           ))}
         </div>
@@ -142,6 +156,11 @@ export default function Education() {
             <h3 className="text-sm text-zinc-300 font-light">
               {edu.degree}
             </h3>
+            {edu.result && (
+              <p className="text-xs text-cyan-400/80 font-medium mt-2">
+                {edu.result}
+              </p>
+            )}
           </motion.div>
         ))}
       </div>
