@@ -13,6 +13,14 @@ interface ExperienceItem {
 
 const experiences: ExperienceItem[] = [
   {
+    id: 5,
+    role: "Full Stack Developer",
+    company: "loriginal.org",
+    date: "May 2026 - Present (Montreal, QC)",
+    description: "Leading the development of the Artur.art and Loriginal.org platforms. Designing and implementing front-end React components and back-end Next.js API routes. Managing application lifecycle via GitHub and Vercel, and ensuring high performance and technical SEO.",
+    skills: ["React", "Next.js", "Vercel", "SEO", "CI/CD"],
+  },
+  {
     id: 1,
     role: "Freelance Full Stack Engineer",
     company: "Self-Employed",
