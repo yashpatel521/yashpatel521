@@ -24,7 +24,7 @@ const experiences: ExperienceItem[] = [
     id: 1,
     role: "Freelance Full Stack Engineer",
     company: "Self-Employed",
-    date: "Oct 2024 - Present (Montreal, QC)",
+    date: "Oct 2024 - March 2026 (Montreal, QC)",
     description: "Specialized in advanced web analysis, backend automation, and AI-driven system development. Architected AI-powered automation platforms using GraphQL, AWS Lambda, and serverless frameworks to optimize enterprise workflows.",
     skills: ["Node.js", "TypeScript", "AWS Lambda", "GraphQL", "AI/LLMs"],
   },
