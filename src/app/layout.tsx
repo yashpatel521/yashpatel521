@@ -19,13 +19,13 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://yashpatel521.github.io/yashpatel521/"),
   title: {
-    default: "Yash Patel | Motion Designer & Creative Developer",
+    default: "Yash Patel | Full Stack Developer",
     template: "%s | Yash Patel",
   },
-  description: "Explore the creative portfolio of Yash Patel, a Motion Designer and Creative Developer specializing in high-end scrollytelling and interactive web experiences.",
+  description: "Explore the creative portfolio of Yash Patel, a Full Stack Developer specializing in high-end scrollytelling and interactive web experiences.",
   keywords: [
     "Yash Patel",
-    "Motion Designer",
+    "Full Stack Developer",
     "Creative Developer",
     "Portfolio",
     "Scrollytelling",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "/",
-    title: "Yash Patel | Motion Designer & Creative Developer",
+    title: "Yash Patel | Full Stack Developer",
     description: "Explore the creative portfolio of Yash Patel, specializing in high-end scrollytelling and interactive web experiences.",
     siteName: "Yash Patel Portfolio",
     images: [
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Yash Patel | Motion Designer & Creative Developer",
+    title: "Yash Patel | Full Stack Developer",
     description: "Explore the creative portfolio of Yash Patel, specializing in high-end scrollytelling and interactive web experiences.",
     creator: "@yashpatel521", // Updated to match GitHub/GitHub Pages username
     images: ["/yashpatel521/og-image.png"],
