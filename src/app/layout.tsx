@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     siteName: "Yash Patel Portfolio",
     images: [
       {
-        url: "/yashpatel521/og-image.png", // Recommended to have an OG image
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Yash Patel Portfolio",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     title: "Yash Patel | Full Stack Developer",
     description: "Explore the creative portfolio of Yash Patel, specializing in high-end scrollytelling and interactive web experiences.",
     creator: "@yashpatel521", // Updated to match GitHub/GitHub Pages username
-    images: ["/yashpatel521/og-image.png"],
+    images: ["/og-image.png"],
   },
   robots: {
     index: true,
@@ -76,9 +76,9 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: "/yashpatel521/favicon.png",
-    shortcut: "/yashpatel521/favicon.png",
-    apple: "/yashpatel521/favicon.png",
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
   },
 };
 
