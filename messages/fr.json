@@ -1,0 +1,170 @@
+{
+  "metadata": {
+    "title": "Yash Patel | Développeur Full Stack",
+    "titleTemplate": "%s | Yash Patel",
+    "description": "Découvrez le portfolio créatif de Yash Patel, développeur Full Stack spécialisé dans le scrollytelling haut de gamme et les expériences web interactives.",
+    "ogDescription": "Découvrez le portfolio créatif de Yash Patel, spécialisé dans le scrollytelling haut de gamme et les expériences web interactives.",
+    "siteName": "Portfolio Yash Patel",
+    "ogImageAlt": "Portfolio Yash Patel"
+  },
+  "common": {
+    "language": "Langue",
+    "loading": "Chargement…",
+    "viewCode": "Voir le code"
+  },
+  "home": {
+    "overviewTitle": "Aperçu",
+    "overviewDescription": "Je suis un professionnel ambitieux, soucieux du détail et analytique, passionné par la livraison de solutions performantes, sécurisées et fiables."
+  },
+  "overlay": {
+    "name": "Yash Patel.",
+    "role": "Ingénieur Full-Stack",
+    "section2Line1": "Conception de",
+    "section2Highlight": "plateformes cloud évolutives.",
+    "section3Prefix": "Pionnier de l'",
+    "section3Emphasis": "automatisation",
+    "section3Line2": "d'entreprise pilotée par l'IA.",
+    "section4Title": "Construire l'avenir des logiciels d'entreprise.",
+    "section4Intro": "Je suis un ingénieur full-stack professionnel qui conçoit des architectures évolutives avec",
+    "section4Stack": "Next.js, Node.js, TypeScript et AWS",
+    "section4Outro": "Fort d'une expertise en infrastructure haute performance, je développe des plateformes SaaS d'entreprise, des systèmes d'automatisation pilotés par l'IA et des API robustes dans divers domaines, avec l'objectif de livrer des solutions sécurisées et fiables."
+  },
+  "experience": {
+    "title": "Expérience",
+    "subtitle": "Un parcours de création d'applications web et cloud évolutives.",
+    "items": [
+      {
+        "role": "Développeur Full Stack",
+        "company": "loriginal.org",
+        "date": "Mai 2026 - Présent (Montréal, QC)",
+        "description": "Direction du développement des plateformes Artur.art et Loriginal.org. Conception et implémentation de composants React front-end et de routes API Next.js back-end. Gestion du cycle de vie des applications via GitHub et Vercel, avec optimisation des performances et du SEO technique.",
+        "skills": ["React", "Next.js", "Vercel", "SEO", "CI/CD"]
+      },
+      {
+        "role": "Ingénieur Full Stack freelance",
+        "company": "Travailleur autonome",
+        "date": "Oct 2024 - Mars 2026 (Montréal, QC)",
+        "description": "Spécialisé en analyse web avancée, automatisation back-end et développement de systèmes pilotés par l'IA. Architecture de plateformes d'automatisation alimentées par l'IA avec GraphQL, AWS Lambda et des frameworks serverless pour optimiser les flux de travail d'entreprise.",
+        "skills": ["Node.js", "TypeScript", "AWS Lambda", "GraphQL", "IA/LLM"]
+      },
+      {
+        "role": "Gérant",
+        "company": "Subway",
+        "date": "Jan 2024 - Présent (Montréal, QC)",
+        "description": "Gestion des opérations quotidiennes et de l'effectif dans un environnement dynamique.",
+        "skills": ["Gestion", "Opérations"]
+      },
+      {
+        "role": "Développeur Node.js",
+        "company": "JKSOL INFOTECH",
+        "date": "Juil 2021 - Juil 2022 (Inde)",
+        "description": "Conception et optimisation de 12 API back-end avec Node.js, Express.js et PostgreSQL, réduisant les temps de réponse de 30 % tout en supportant plus de 50 000 utilisateurs simultanés.",
+        "skills": ["Node.js", "PostgreSQL", "TypeORM", "WebSocket", "AWS EC2"]
+      },
+      {
+        "role": "Développeur PHP (Stage)",
+        "company": "Differenz System",
+        "date": "Déc 2020 - Mai 2021 (Inde)",
+        "description": "Développement et déploiement de plus de 8 applications web WordPress et PHP, gestion des mises en production et réduction des temps d'arrêt de 20 %.",
+        "skills": ["PHP", "WordPress", "JavaScript", "SQL"]
+      }
+    ]
+  },
+  "education": {
+    "title": "Formation",
+    "subtitle": "Parcours académique et apprentissage continu.",
+    "items": [
+      {
+        "degree": "DEC en programmation Internet",
+        "institution": "Collège Tav",
+        "date": "Mars 2023 - Oct 2024",
+        "result": "Note : 90+/100"
+      },
+      {
+        "degree": "Baccalauréat en technologie de l'information",
+        "institution": "Université Uka Tarsadia",
+        "date": "Août 2017 - Juin 2021",
+        "result": "MPC : 8,93/10"
+      },
+      {
+        "degree": "Cours de français (B1)",
+        "institution": "Cours gouvernemental, Montréal",
+        "date": "Nov 2024 - Sep 2025",
+        "result": "Niveau B1 obtenu"
+      }
+    ]
+  },
+  "leetcode": {
+    "title": "Résolution de problèmes",
+    "subtitle": "Affiner la pensée algorithmique et l'expertise en structures de données grâce à une pratique régulière sur LeetCode.",
+    "cardTitle": "Maîtrise LeetCode",
+    "username": "@yash521",
+    "bullet1": "Régularité en structures de données et algorithmes",
+    "bullet2": "Dépôt actif pour le suivi des solutions",
+    "viewProfile": "Voir le profil",
+    "solutionRepo": "Dépôt de solutions",
+    "statsAlt": "Statistiques LeetCode"
+  },
+  "skills": {
+    "title": "Expertise principale",
+    "subtitle": "Architecture technique et ensembles de compétences spécialisées.",
+    "categories": [
+      {
+        "title": "Développement front-end",
+        "skills": ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"]
+      },
+      {
+        "title": "Ingénierie back-end",
+        "skills": ["Node.js", "PHP", "WordPress", "GraphQL"]
+      },
+      {
+        "title": "Bases de données et cache",
+        "skills": ["PostgreSQL", "Redis", "Hasura", "MySQL"]
+      },
+      {
+        "title": "Cloud et intégration IA",
+        "skills": ["AWS", "OpenAI API", "Serverless", "Microservices"]
+      },
+      {
+        "title": "Résolution de problèmes",
+        "skills": ["Structures de données", "Algorithmes", "LeetCode", "Logique"]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projets en vedette",
+    "subtitle": "Une sélection d'applications web performantes, de plateformes pilotées par l'IA et de solutions d'entreprise.",
+    "items": [
+      {
+        "title": "SmartOps – Plateforme SaaS d'automatisation IA",
+        "category": "Oct 2024 – Nov 2025",
+        "description": "Plateforme SaaS alimentée par l'IA automatisant les flux de travail, le routage des tickets et les prévisions opérationnelles. Intégration de l'API OpenAI pour l'automatisation pilotée par l'IA, réduisant les coûts opérationnels de 45 % via une architecture événementielle."
+      },
+      {
+        "title": "Plateforme IA d'entreprise et données en temps réel",
+        "category": "Oct 2024 – Nov 2025",
+        "description": "Plateforme microservices évolutive offrant des analyses de données en temps réel, des flux multi-locataires et une prise de décision pilotée par l'IA. Optimisée pour la performance et la sécurité des données."
+      },
+      {
+        "title": "Sixywin",
+        "category": "Mai 2025 – Sep 2025",
+        "description": "Jeu de type loterie en ligne où les utilisateurs choisissent 6 numéros et tournent quotidiennement pour gagner des pièces virtuelles. Comprend des tours quotidiens, des classements et des publicités récompensées."
+      },
+      {
+        "title": "Application de traduction IA",
+        "category": "Mars 2024 – Juil 2024 (Collège Tav)",
+        "description": "Application de traduction comparant plusieurs modèles d'IA (ChatGPT, Gemini, DeepL) avec traitement d'images pour extraire et traduire le texte des images."
+      },
+      {
+        "title": "Application de blog",
+        "category": "Jan 2024 – Juil 2024 (Collège Tav)",
+        "description": "Application de blog full-stack pour gérer des notes, démontrant l'intégration front-end et back-end. Interface conviviale avec gestion fluide des données pour une expérience optimale."
+      },
+      {
+        "title": "Système de gestion de projets",
+        "category": "Fév 2024 – Juil 2024 (Collège Tav)",
+        "description": "Architecture back-end et front-end pour un logiciel de bureau multiplateforme (Windows, Mac, Linux) utilisant ElectronJS et Node.js."
+      }
+    ]
+  }
+}
