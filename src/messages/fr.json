@@ -1,0 +1,199 @@
+{
+  "nav": {
+    "switchLang": "EN"
+  },
+  "overlay": {
+    "name": "Yash Patel.",
+    "role": "Ingénieur Full-Stack",
+    "section2": {
+      "part1": "Architecturer des ",
+      "part2": "plateformes cloud évolutives."
+    },
+    "section3": {
+      "part1": "Pionnier de ",
+      "part2": "l'automatisation d'entreprise ",
+      "part3": "pilotée par l'IA."
+    },
+    "section4": {
+      "titlePart1": "Construire l'avenir des ",
+      "titlePart2": "logiciels d'entreprise.",
+      "descPart1": "Je suis un ingénieur full-stack professionnel qui crée des architectures évolutives avec ",
+      "descPart2": "Next.js, Node.js, TypeScript et AWS",
+      "descPart3": ". Avec un fort accent sur l'infrastructure haute performance, je développe des plateformes SaaS d'entreprise, des systèmes d'automatisation pilotés par l'IA et des API robustes dans divers domaines, motivé pour fournir des solutions sécurisées et fiables."
+    }
+  },
+  "overview": {
+    "title": "Aperçu",
+    "description": "Je suis un professionnel ambitieux, soucieux des détails et analytique, passionné par la fourniture de solutions performantes, sécurisées et fiables."
+  },
+  "experience": {
+    "title": "Expérience",
+    "subtitle": "Un historique de création d'applications web et cloud évolutives.",
+    "items": [
+      {
+        "id": 5,
+        "role": "Développeur Full Stack",
+        "company": "loriginal.org",
+        "date": "Mai 2026 - Présent (Montréal, QC)",
+        "description": "Dirige le développement des plateformes Artur.art et Loriginal.org. Conception et mise en œuvre de composants React front-end et de routes API Next.js back-end. Gestion du cycle de vie de l'application via GitHub et Vercel, et garantie d'une haute performance et d'un SEO technique.",
+        "skills": ["React", "Next.js", "Vercel", "SEO", "CI/CD"]
+      },
+      {
+        "id": 1,
+        "role": "Ingénieur Full Stack Indépendant",
+        "company": "Travailleur Autonome",
+        "date": "Oct 2024 - Mars 2026 (Montréal, QC)",
+        "description": "Spécialisé dans l'analyse web avancée, l'automatisation backend et le développement de systèmes pilotés par l'IA. Architecture de plateformes d'automatisation alimentées par l'IA utilisant GraphQL, AWS Lambda et des frameworks sans serveur pour optimiser les flux de travail des entreprises.",
+        "skills": ["Node.js", "TypeScript", "AWS Lambda", "GraphQL", "AI/LLMs"]
+      },
+      {
+        "id": 2,
+        "role": "Gérant",
+        "company": "Subway",
+        "date": "Jan 2024 - Présent (Montréal, QC)",
+        "description": "Gestion des opérations quotidiennes et du personnel dans un environnement au rythme rapide.",
+        "skills": ["Gestion", "Opérations"]
+      },
+      {
+        "id": 3,
+        "role": "Développeur Node.js",
+        "company": "JKSOL INFOTECH",
+        "date": "Juil 2021 - Juil 2022 (Inde)",
+        "description": "Conception et optimisation de 12 API backend utilisant Node.js, Express.js et PostgreSQL, réduisant les temps de réponse des serveurs de 30% tout en prenant en charge plus de 50 000 utilisateurs simultanés.",
+        "skills": ["Node.js", "PostgreSQL", "TypeORM", "WebSocket", "AWS EC2"]
+      },
+      {
+        "id": 4,
+        "role": "Développeur PHP (Stage)",
+        "company": "Differenz System",
+        "date": "Déc 2020 - Mai 2021 (Inde)",
+        "description": "Facilitation du développement et du déploiement de plus de 8 applications web WordPress et PHP, gestion des mises en production en direct et réduction des temps d'arrêt de 20%.",
+        "skills": ["PHP", "WordPress", "JavaScript", "SQL"]
+      }
+    ]
+  },
+  "education": {
+    "title": "Éducation",
+    "subtitle": "Parcours académique et apprentissage continu.",
+    "items": [
+      {
+        "id": 1,
+        "degree": "Diplôme en Programmation Internet",
+        "institution": "Collège Tav",
+        "date": "Mars 2023 - Oct 2024",
+        "result": "Note: 90+/100"
+      },
+      {
+        "id": 2,
+        "degree": "Licence en Technologie de l'Information",
+        "institution": "Université Uka Tarsadia",
+        "date": "Août 2017 - Juin 2021",
+        "result": "Moyenne: 8.93/10"
+      },
+      {
+        "id": 3,
+        "degree": "Cours de Français (B1)",
+        "institution": "Cours du Gouvernement, Montréal",
+        "date": "Nov 2024 - Sep 2025",
+        "result": "Niveau B1 Réussi"
+      }
+    ]
+  },
+  "leetcode": {
+    "title": "Résolution de Problèmes",
+    "subtitle": "Affûtage de la pensée algorithmique et de l'expertise en structures de données grâce à une pratique constante sur LeetCode.",
+    "cardTitle": "Maîtrise de LeetCode",
+    "point1": "Régularité dans les Structures de Données et Algorithmes",
+    "point2": "Dépôt Actif pour le Suivi des Solutions",
+    "btnProfile": "Voir le Profil",
+    "btnRepo": "Dépôt des Solutions"
+  },
+  "skills": {
+    "title": "Expertise Principale",
+    "subtitle": "Architecture technique et compétences spécialisées.",
+    "items": [
+      {
+        "id": 1,
+        "title": "Développement Frontend",
+        "skills": ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"]
+      },
+      {
+        "id": 2,
+        "title": "Ingénierie Backend",
+        "skills": ["Node.js", "PHP", "WordPress", "GraphQL"]
+      },
+      {
+        "id": 3,
+        "title": "Bases de Données et Cache",
+        "skills": ["PostgreSQL", "Redis", "Hasura", "MySQL"]
+      },
+      {
+        "id": 4,
+        "title": "Cloud et Intégration IA",
+        "skills": ["AWS", "API OpenAI", "Sans Serveur", "Microservices"]
+      },
+      {
+        "id": 5,
+        "title": "Résolution de Problèmes",
+        "skills": ["Structures de Données", "Algorithmes", "LeetCode", "Optimisation Logique"]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projets en Vedette",
+    "subtitle": "Une sélection d'applications web ultra-performantes, de plateformes pilotées par l'IA et de solutions d'entreprise.",
+    "btnView": "Voir le Code",
+    "items": [
+      {
+        "id": 1,
+        "title": "SmartOps – Plateforme SaaS d'Automatisation IA",
+        "category": "Oct 2024 – Nov 2025",
+        "description": "Plateforme SaaS alimentée par l'IA automatisant les flux de travail commerciaux, le routage des tickets et les prévisions opérationnelles. Intégration de l'API OpenAI pour l'automatisation pilotée par l'IA, réduisant les frais opérationnels de 45% via une architecture orientée événements.",
+        "image": "/yashpatel521/projects/smartops.png",
+        "tech": ["Next.js", "Node.js", "Redis", "PostgreSQL", "OpenAI"]
+      },
+      {
+        "id": 2,
+        "title": "IA d'Entreprise et Plateforme de Données en Temps Réel",
+        "category": "Oct 2024 – Nov 2025",
+        "description": "Une plateforme évolutive basée sur des microservices permettant l'analyse de données en temps réel, des flux de travail multi-locataires et une prise de décision pilotée par l'IA. Optimisée pour les performances et la manipulation sécurisée des données.",
+        "image": "/yashpatel521/projects/1.png",
+        "tech": ["Node.js", "Hasura", "AWS", "GraphQL"]
+      },
+      {
+        "id": 3,
+        "title": "Sixywin",
+        "category": "Mai 2025 – Sep 2025",
+        "description": "Un jeu de type loterie sur le web où les utilisateurs choisissent 6 numéros et font tourner une roue quotidiennement pour gagner des pièces virtuelles. Comprend des tours quotidiens, des classements et des publicités avec récompenses.",
+        "image": "/yashpatel521/projects/sixywin.png",
+        "tech": ["React.js", "Supabase", "Tailwind CSS", "Vercel"]
+      },
+      {
+        "id": 4,
+        "title": "Application de Traduction IA",
+        "category": "Mars 2024 – Juil 2024 (Collège Tav)",
+        "description": "Une application de traduction comparant plusieurs modèles d'IA (ChatGPT, Gemini, DeepL) intégrant des fonctionnalités de traitement d'images pour extraire et traduire du texte à partir d'images.",
+        "image": "/yashpatel521/projects/aitranslation.png",
+        "tech": ["Express.js", "TypeORM", "TypeScript", "SQLite"],
+        "link": "https://github.com/yashpatel521/translation-app"
+      },
+      {
+        "id": 5,
+        "title": "Application de Blog",
+        "category": "Jan 2024 – Juil 2024 (Collège Tav)",
+        "description": "Développement d'une application de blog full-stack pour la gestion des notes, démontrant l'intégration entre le frontend et le backend. Conception d'une interface conviviale avec une manipulation fluide des données pour une expérience utilisateur optimale.",
+        "image": "/yashpatel521/projects/2.png",
+        "tech": ["Next.js", "Prisma ORM"],
+        "link": "https://github.com/yashpatel521/nextjs-blog"
+      },
+      {
+        "id": 6,
+        "title": "Système de Gestion de Projet",
+        "category": "Fév 2024 – Juil 2024 (Collège Tav)",
+        "description": "Développement de l'architecture backend et frontend pour un logiciel de bureau multiplateforme (Windows, Mac, Linux) utilisant ElectronJS et Node.js.",
+        "image": "/yashpatel521/projects/3.png",
+        "tech": ["Node.js", "Next.js", "ElectronJS", "MySQL"]
+      }
+    ]
+  }
+}

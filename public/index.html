@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yash Patel | Redirecting...</title>
+  <script>
+    (function() {
+      // Get preferred language, default to 'en'
+      var lang = navigator.language || navigator.userLanguage;
+      var locale = (lang && lang.toLowerCase().startsWith('fr')) ? 'fr' : 'en';
+      
+      // We are deployed at /yashpatel521 on GitHub Pages
+      // The built static output will be /yashpatel521/en or /yashpatel521/fr
+      var basePath = '/yashpatel521';
+      var newUrl = basePath + '/' + locale;
+      
+      // Preserve search params and hash if any
+      var search = window.location.search;
+      var hash = window.location.hash;
+      
+      window.location.replace(newUrl + search + hash);
+    })();
+  </script>
+</head>
+<body style="background-color: #121212; color: white; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; font-family: sans-serif;">
+  <p>Redirecting to your language...</p>
+</body>
+</html>

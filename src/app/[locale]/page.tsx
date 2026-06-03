@@ -1,3 +1,5 @@
+import { getTranslations, setRequestLocale } from 'next-intl/server';
+
 import ScrollyCanvas from "@/components/ScrollyCanvas";
 import Overlay from "@/components/Overlay";
 import Timeline from "@/components/Timeline";
@@ -6,11 +8,18 @@ import Education from "@/components/Education";
 import Projects from "@/components/Projects"; // Skills
 import LeetCode from "@/components/LeetCode";
 import ProjectSection from "@/components/ProjectSection";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { Github, Linkedin, Mail } from "lucide-react";
 
-export default function Home() {
+export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
+  const t = await getTranslations('overview');
+
   return (
     <main className="min-h-screen font-sans">
+      <LanguageSwitcher />
       <div className="relative">
         <ScrollyCanvas />
         <Overlay />
@@ -21,10 +30,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:items-end justify-between gap-8">
           <div>
             <h3 className="text-3xl md:text-5xl font-bold tracking-tight text-white mb-4">
-              Overview
+              {t('title')}
             </h3>
             <p className="text-zinc-400 max-w-xl">
-              I am an ambitious, detail-oriented, and analytical professional passionate about delivering high-performance, secure, and reliable solutions.
+              {t('description')}
             </p>
           </div>
           <div className="flex gap-4">

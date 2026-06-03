@@ -2,16 +2,19 @@
 
 import { motion } from "framer-motion";
 import { Code2, ExternalLink, Trophy } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export default function LeetCode() {
+  const t = useTranslations('leetcode');
+
   return (
     <div className="w-full mb-32 relative">
       <div className="text-center md:text-left mb-16 px-6 md:px-0">
         <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white mb-4">
-          Problem Solving
+          {t('title')}
         </h2>
         <p className="text-zinc-400 max-w-xl md:mx-auto md:text-center text-left">
-          Sharpening algorithmic thinking and data structure expertise through consistent LeetCode practice.
+          {t('subtitle')}
         </p>
       </div>
 
@@ -33,7 +36,7 @@ export default function LeetCode() {
                   <Trophy size={24} />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-white leading-tight">LeetCode Mastery</h3>
+                  <h3 className="text-2xl font-bold text-white leading-tight">{t('cardTitle')}</h3>
                   <p className="text-zinc-500 text-sm">@yash521</p>
                 </div>
               </div>
@@ -41,11 +44,11 @@ export default function LeetCode() {
               <div className="space-y-4 mb-8">
                 <div className="flex items-center gap-3 text-zinc-300">
                   <div className="h-2 w-2 rounded-full bg-yellow-500 shadow-[0_0_10px_rgba(234,179,8,1)]" />
-                  <span>Consistency in Data Structures & Algorithms</span>
+                  <span>{t('point1')}</span>
                 </div>
                 <div className="flex items-center gap-3 text-zinc-300">
                   <div className="h-2 w-2 rounded-full bg-yellow-500 shadow-[0_0_10px_rgba(234,179,8,1)]" />
-                  <span>Active Repository for Solution Tracking</span>
+                  <span>{t('point2')}</span>
                 </div>
               </div>
 
@@ -56,7 +59,7 @@ export default function LeetCode() {
                   rel="noreferrer"
                   className="flex items-center gap-2 px-6 py-3 rounded-full bg-yellow-500 text-black font-bold hover:bg-yellow-400 transition-all hover:scale-105 active:scale-95 shadow-[0_10px_20px_rgba(234,179,8,0.2)]"
                 >
-                  View Profile <ExternalLink size={16} />
+                  {t('btnProfile')} <ExternalLink size={16} />
                 </a>
                 <a 
                   href="https://github.com/yashpatel521/leetcode" 
@@ -64,14 +67,13 @@ export default function LeetCode() {
                   rel="noreferrer"
                   className="flex items-center gap-2 px-6 py-3 rounded-full bg-white/[0.05] border border-white/[0.1] text-white font-bold hover:bg-white/[0.1] transition-all hover:scale-105 active:scale-95"
                 >
-                  Solution Repo <Code2 size={16} />
+                  {t('btnRepo')} <Code2 size={16} />
                 </a>
               </div>
             </div>
 
             <div className="w-full md:w-auto flex justify-center">
               <div className="relative p-2 rounded-2xl bg-black/40 border border-white/[0.1] backdrop-blur-md group-hover:border-yellow-500/50 transition-all duration-500">
-                 {/* This card uses the working jacoblin API found during research */}
                 <img 
                   src="https://leetcard.jacoblin.cool/yash521?theme=dark" 
                   alt="LeetCode Stats"

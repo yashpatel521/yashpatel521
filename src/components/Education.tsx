@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { GraduationCap } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 interface EducationItem {
   id: number;
@@ -11,31 +12,10 @@ interface EducationItem {
   result?: string;
 }
 
-const education: EducationItem[] = [
-  {
-    id: 1,
-    degree: "Diploma in Internet Programming",
-    institution: "Tav College",
-    date: "Mar 2023 - Oct 2024",
-    result: "Score: 90+/100",
-  },
-  {
-    id: 2,
-    degree: "Bachelor of Technology in Information Technology",
-    institution: "Uka Tarsadia University",
-    date: "Aug 2017 - Jun 2021",
-    result: "CGPA: 8.93/10",
-  },
-  {
-    id: 3,
-    degree: "French Language Course (B1)",
-    institution: "Government Class, Montreal",
-    date: "Nov 2024 - Sep 2025",
-    result: "Clear B1 Level",
-  },
-];
-
 export default function Education() {
+  const t = useTranslations('education');
+  const education = t.raw('items') as EducationItem[];
+
   const leftEdu = education.filter((_, i) => i % 2 === 0);
   const rightEdu = education.filter((_, i) => i % 2 !== 0);
 
@@ -43,10 +23,10 @@ export default function Education() {
     <div className="w-full mb-32 relative">
       <div className="text-center md:text-left mb-16 px-6 md:px-0">
         <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white mb-4">
-          Education
+          {t('title')}
         </h2>
         <p className="text-zinc-400 max-w-xl md:mx-auto md:text-center text-left">
-          Academic background and continued learning.
+          {t('subtitle')}
         </p>
       </div>
 

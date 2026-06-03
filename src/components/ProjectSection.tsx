@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { Github } from "lucide-react";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 interface ProjectItem {
   id: number;
@@ -14,72 +15,20 @@ interface ProjectItem {
   link?: string;
 }
 
-const basePath = "/yashpatel521";
-
-const projects: ProjectItem[] = [
-  {
-    id: 1,
-    title: "SmartOps – AI Automation SaaS Platform",
-    category: "Oct 2024 – Nov 2025",
-    description: "AI-powered SaaS platform automating business workflows, ticket routing, and operational forecasting. Integrated OpenAI API for AI-driven automation, reducing operational overhead by 45% via an event-driven architecture.",
-    image: `${basePath}/projects/smartops.png`,
-    tech: ["Next.js", "Node.js", "Redis", "PostgreSQL", "OpenAI"],
-  },
-  {
-    id: 2,
-    title: "Enterprise AI & Real-Time Data Platform",
-    category: "Oct 2024 – Nov 2025",
-    description: "A scalable microservices-based platform enabling real-time data analytics, multi-tenant workflows, and AI-driven decision making. Optimized for performance and secure data handling.",
-    image: `${basePath}/projects/1.png`,
-    tech: ["Node.js", "Hasura", "AWS", "GraphQL"],
-  },
-  {
-    id: 3,
-    title: "Sixywin",
-    category: "May 2025 – Sep 2025",
-    description: "A web-based lottery-style game where users pick 6 numbers and spin daily to win virtual coins. Features daily spins, leaderboards, and rewarded ads.",
-    image: `${basePath}/projects/sixywin.png`,
-    tech: ["React.js", "Supabase", "Tailwind CSS", "Vercel"],
-  },
-  {
-    id: 4,
-    title: "Ai Translation App",
-    category: "Mar 2024 – Jul 2024 (Tav College)",
-    description: "A translation application comparing multiple AI models (ChatGPT, Gemini, DeepL) integrating image processing features to extract and translate text from images.",
-    image: `${basePath}/projects/aitranslation.png`,
-    tech: ["Express.js", "TypeORM", "TypeScript", "SQLite"],
-    link: "https://github.com/yashpatel521/translation-app",
-  },
-  {
-    id: 5,
-    title: "Blog App",
-    category: "Jan 2024 – Jul 2024 (Tav College)",
-    description: "Developed a full-stack blog application for managing notes, demonstrating integration between frontend and backend. Designed a user-friendly interface with seamless data handling for an optimal user experience.",
-    image: `${basePath}/projects/2.png`,
-    tech: ["Next.js", "Prisma ORM"],
-    link: "https://github.com/yashpatel521/nextjs-blog",
-  },
-  {
-    id: 6,
-    title: "Project Management System",
-    category: "Feb 2024 – Jul 2024 (Tav College)",
-    description: "Developed both backend and frontend architecture for a cross-platform desktop software (Windows, Mac, Linux) utilizing ElectronJS and Node.js.",
-    image: `${basePath}/projects/3.png`,
-    tech: ["Node.js", "Next.js", "ElectronJS", "MySQL"],
-  }
-];
-
 export default function ProjectSection() {
+  const t = useTranslations('projects');
+  const projects = t.raw('items') as ProjectItem[];
+
   return (
     <section className="relative z-20 bg-gradient-to-b from-transparent via-[#0a0f1c]/80 to-[#050814]/90 py-32 px-6 md:px-12 lg:px-24 border-t border-cyan-500/[0.1]">
       <div className="max-w-7xl mx-auto">
         
         <div className="flex flex-col text-center md:text-left mb-20">
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white mb-4 drop-shadow-[0_0_15px_rgba(34,211,238,0.3)]">
-            Featured Projects
+            {t('title')}
           </h2>
           <p className="text-zinc-400 max-w-2xl text-lg font-light md:mx-0 mx-auto">
-            A selection of highly-performant web applications, AI-driven platforms, and enterprise solutions.
+            {t('subtitle')}
           </p>
         </div>
 
@@ -136,7 +85,7 @@ export default function ProjectSection() {
                   <div className="flex gap-4">
                     {project.link && (
                       <a href={project.link} target="_blank" rel="noreferrer" className="flex items-center gap-2 h-12 px-6 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 font-medium transition-all hover:bg-cyan-500 hover:text-[#050814] hover:shadow-[0_0_20px_rgba(34,211,238,0.5)]">
-                        View Code <Github size={16} />
+                        {t('btnView')} <Github size={16} />
                       </a>
                     )}
                   </div>

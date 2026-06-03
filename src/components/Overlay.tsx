@@ -2,9 +2,11 @@
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+import { useTranslations } from "next-intl";
 
 export default function Overlay() {
   const containerRef = useRef<HTMLDivElement>(null);
+  const t = useTranslations("overlay");
   
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -37,10 +39,10 @@ export default function Overlay() {
           className="absolute inset-0 flex flex-col items-center justify-center text-center"
         >
           <h1 className="text-5xl md:text-8xl font-bold tracking-tighter text-white drop-shadow-lg mb-2">
-            Yash Patel.
+            {t('name')}
           </h1>
           <p className="mt-2 text-xl md:text-3xl font-light text-cyan-400 drop-shadow-[0_0_15px_rgba(34,211,238,0.5)] uppercase tracking-widest">
-            Full-Stack Engineer
+            {t('role')}
           </p>
         </motion.div>
 
@@ -50,7 +52,7 @@ export default function Overlay() {
           className="absolute inset-0 flex flex-col items-start justify-center text-left pl-8 md:pl-24 w-full md:w-2/3"
         >
           <h2 className="text-4xl md:text-7xl font-bold tracking-tight text-white leading-tight drop-shadow-xl">
-            Architecting <br/><span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">scalable cloud platforms.</span>
+            {t('section2.part1')} <br/><span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">{t('section2.part2')}</span>
           </h2>
         </motion.div>
 
@@ -60,8 +62,8 @@ export default function Overlay() {
           className="absolute inset-0 flex flex-col items-end justify-center text-right pr-8 md:pr-24 ml-auto w-full md:w-2/3"
         >
           <h2 className="text-4xl md:text-6xl font-medium tracking-tight text-white leading-snug drop-shadow-xl">
-            Pioneering <span className="font-light italic text-cyan-300">AI-driven</span> <br/>
-            <span className="font-bold underline decoration-cyan-500/50 underline-offset-8">enterprise automation.</span>
+            {t('section3.part1')} <span className="font-light italic text-cyan-300">{t('section3.part2')}</span> <br/>
+            <span className="font-bold underline decoration-cyan-500/50 underline-offset-8">{t('section3.part3')}</span>
           </h2>
         </motion.div>
 
@@ -73,12 +75,11 @@ export default function Overlay() {
           <div className="max-w-4xl p-8 md:p-12 rounded-3xl bg-black/40 border border-white/[0.05] backdrop-blur-xl shadow-2xl relative overflow-hidden group">
             <div className="absolute inset-0 bg-gradient-to-tr from-cyan-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
             <h3 className="text-3xl md:text-5xl font-bold text-white mb-6 drop-shadow-lg leading-tight">
-              Building the Future of <br className="hidden md:block"/> Enterprise Software.
+              {t('section4.titlePart1')} <br className="hidden md:block"/> {t('section4.titlePart2')}
             </h3>
             <p className="text-lg md:text-xl font-light text-zinc-300 leading-relaxed shadow-black drop-shadow-md">
-              I am a professional full-stack engineer building scalable architectures with <span className="text-cyan-400 font-medium tracking-wide">Next.js, Node.js, TypeScript, and AWS</span>. 
-              With a strong focus on high-performance infrastructure, I develop enterprise SaaS platforms, AI-driven automation systems, 
-              and robust APIs across diverse domains, driven to deliver secure and reliable solutions.
+              {t('section4.descPart1')} <span className="text-cyan-400 font-medium tracking-wide">{t('section4.descPart2')}</span>
+              {t('section4.descPart3')}
             </p>
           </div>
         </motion.div>

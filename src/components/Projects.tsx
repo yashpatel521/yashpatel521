@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Terminal } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 interface SkillCategory {
   id: number;
@@ -9,35 +10,10 @@ interface SkillCategory {
   skills: string[];
 }
 
-const skillCategories: SkillCategory[] = [
-  {
-    id: 1,
-    title: "Frontend Development",
-    skills: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"],
-  },
-  {
-    id: 2,
-    title: "Backend Engineering",
-    skills: ["Node.js", "PHP", "WordPress", "GraphQL"],
-  },
-  {
-    id: 3,
-    title: "Databases & Cache",
-    skills: ["PostgreSQL", "Redis", "Hasura", "MySQL"],
-  },
-  {
-    id: 4,
-    title: "Cloud & AI Integration",
-    skills: ["AWS", "OpenAI API", "Serverless", "Microservices"],
-  },
-  {
-    id: 5,
-    title: "Problem Solving",
-    skills: ["Data Structures", "Algorithms", "LeetCode", "Logic Tuning"],
-  },
-];
-
 export default function Skills() {
+  const t = useTranslations('skills');
+  const skillCategories = t.raw('items') as SkillCategory[];
+
   const leftSkills = skillCategories.filter((_, i) => i % 2 === 0);
   const rightSkills = skillCategories.filter((_, i) => i % 2 !== 0);
 
@@ -45,10 +21,10 @@ export default function Skills() {
     <div className="w-full mb-32 relative">
       <div className="text-center md:text-left mb-24 px-6 md:px-0">
         <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white mb-4">
-          Core Expertise
+          {t('title')}
         </h2>
         <p className="text-zinc-400 max-w-xl md:mx-auto md:text-center text-left">
-          Technical architecture and specialized skill sets.
+          {t('subtitle')}
         </p>
       </div>
 

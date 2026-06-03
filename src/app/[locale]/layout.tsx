@@ -1,7 +1,14 @@
 import type { Metadata, Viewport } from "next";
-import type { ReactNode } from "react";
 import { Inter } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
+
+import { NextIntlClientProvider } from 'next-intl';
+import { getMessages, setRequestLocale } from 'next-intl/server';
+import { notFound } from 'next/navigation';
+import { locales } from '@/i18n/config';
+
+import CustomCursor from "@/components/CustomCursor";
+import InteractiveGrid from "@/components/InteractiveGrid";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -50,7 +57,7 @@ export const metadata: Metadata = {
     siteName: "Yash Patel Portfolio",
     images: [
       {
-        url: "/yashpatel521/og-image.png", // Recommended to have an OG image
+        url: "/yashpatel521/og-image.png",
         width: 1200,
         height: 630,
         alt: "Yash Patel Portfolio",
@@ -61,7 +68,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Yash Patel | Full Stack Developer",
     description: "Explore the creative portfolio of Yash Patel, specializing in high-end scrollytelling and interactive web experiences.",
-    creator: "@yashpatel521", // Updated to match GitHub/GitHub Pages username
+    creator: "@yashpatel521",
     images: ["/yashpatel521/og-image.png"],
   },
   robots: {
@@ -82,22 +89,37 @@ export const metadata: Metadata = {
   },
 };
 
-import CustomCursor from "@/components/CustomCursor";
-import InteractiveGrid from "@/components/InteractiveGrid";
+export function generateStaticParams() {
+  return locales.map((locale) => ({ locale }));
+}
 
-export default function RootLayout({
+export default async function LocaleLayout({
   children,
-}: Readonly<{
-  children: ReactNode;
-}>) {
+  params
+}: {
+  children: React.ReactNode;
+  params: Promise<{locale: string}>;
+}) {
+  const { locale } = await params;
+
+  if (!locales.includes(locale as any)) {
+    notFound();
+  }
+  
+  setRequestLocale(locale);
+
+  const messages = await getMessages();
+
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang={locale} className="scroll-smooth">
       <body
         className={`${inter.variable} font-sans antialiased selection:bg-cyan-500/30 selection:text-cyan-200 bg-[#121212]`}
       >
-        <InteractiveGrid />
-        <CustomCursor />
-        {children}
+        <NextIntlClientProvider messages={messages}>
+          <InteractiveGrid />
+          <CustomCursor />
+          {children}
+        </NextIntlClientProvider>
       </body>
     </html>
   );
