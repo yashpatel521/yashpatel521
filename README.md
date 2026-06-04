@@ -27,7 +27,9 @@ I am a passionate **Full-Stack Engineer** based in Montreal, QC, dedicated to bu
 
 ### 💼 **Professional Journey**
 
-- **Freelance Full Stack Engineer** | *Montreal, QC (Oct 2024 - Present)*
+- **Full Stack Developer** | *loriginal.org (May 2026 - Present)*
+  - Leading development of Artur.art and Loriginal.org platforms. Implementing React components and Next.js API routes with focus on performance and technical SEO.
+- **Freelance Full Stack Engineer** | *Montreal, QC (Oct 2024 - March 2026)*
   - Architecting AI-powered automation platforms using serverless frameworks.
 - **Node.js Developer** | *JKSOL INFOTECH (Jul 2021 - Jul 2022)*
   - Optimized 12+ APIs for 50,000+ concurrent users, reducing lag by 30%.
