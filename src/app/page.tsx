@@ -1,3 +1,5 @@
+"use client";
+
 import ScrollyCanvas from "@/components/ScrollyCanvas";
 import Overlay from "@/components/Overlay";
 import Timeline from "@/components/Timeline";
@@ -7,8 +9,12 @@ import Projects from "@/components/Projects"; // Skills
 import LeetCode from "@/components/LeetCode";
 import ProjectSection from "@/components/ProjectSection";
 import { Github, Linkedin, Mail } from "lucide-react";
+import { useLanguage } from "@/libs/LanguageContext";
+import { hero } from "@/translations/hero";
 
 export default function Home() {
+  const { t } = useLanguage();
+
   return (
     <main className="min-h-screen font-sans">
       <div className="relative">
@@ -21,10 +27,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:items-end justify-between gap-8">
           <div>
             <h3 className="text-3xl md:text-5xl font-bold tracking-tight text-white mb-4">
-              Overview
+              {t(hero.overviewTitle)}
             </h3>
             <p className="text-zinc-400 max-w-xl">
-              I am an ambitious, detail-oriented, and analytical professional passionate about delivering high-performance, secure, and reliable solutions.
+              {t(hero.overviewDescription)}
             </p>
           </div>
           <div className="flex gap-4">

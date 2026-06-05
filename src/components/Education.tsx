@@ -2,51 +2,31 @@
 
 import { motion } from "framer-motion";
 import { GraduationCap } from "lucide-react";
-
-interface EducationItem {
-  id: number;
-  degree: string;
-  institution: string;
-  date: string;
-  result?: string;
-}
-
-const education: EducationItem[] = [
-  {
-    id: 1,
-    degree: "Diploma in Internet Programming",
-    institution: "Tav College",
-    date: "Mar 2023 - Oct 2024",
-    result: "Score: 90+/100",
-  },
-  {
-    id: 2,
-    degree: "Bachelor of Technology in Information Technology",
-    institution: "Uka Tarsadia University",
-    date: "Aug 2017 - Jun 2021",
-    result: "CGPA: 8.93/10",
-  },
-  {
-    id: 3,
-    degree: "French Language Course (B1)",
-    institution: "Government Class, Montreal",
-    date: "Nov 2024 - Sep 2025",
-    result: "Clear B1 Level",
-  },
-];
+import { education } from "@/translations/education";
+import { useLanguage } from "@/libs/LanguageContext";
 
 export default function Education() {
-  const leftEdu = education.filter((_, i) => i % 2 === 0);
-  const rightEdu = education.filter((_, i) => i % 2 !== 0);
+  const { t } = useLanguage();
+
+  const educationItems = education.items.map((item) => ({
+    id: item.id,
+    degree: t(item.degree),
+    institution: t(item.institution),
+    date: t(item.date),
+    result: item.result ? t(item.result) : undefined,
+  }));
+
+  const leftEdu = educationItems.filter((_, i) => i % 2 === 0);
+  const rightEdu = educationItems.filter((_, i) => i % 2 !== 0);
 
   return (
     <div className="w-full mb-32 relative">
       <div className="text-center md:text-left mb-16 px-6 md:px-0">
         <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white mb-4">
-          Education
+          {t(education.title)}
         </h2>
         <p className="text-zinc-400 max-w-xl md:mx-auto md:text-center text-left">
-          Academic background and continued learning.
+          {t(education.subtitle)}
         </p>
       </div>
 
@@ -64,7 +44,7 @@ export default function Education() {
             >
               <div className="absolute top-1/2 -translate-y-1/2 -right-12 lg:-right-16 translate-x-[50%] w-3 h-3 rounded-full bg-zinc-500 border-2 border-[#121212] z-10 transition-all duration-500 group-hover:bg-cyan-400 group-hover:border-cyan-400/20 group-hover:shadow-[0_0_15px_rgba(34,211,238,0.8)]" />
               <div className="absolute top-1/2 -translate-y-1/2 right-0 translate-x-full w-12 lg:w-16 h-[2px] bg-gradient-to-r from-transparent to-white/[0.1] group-hover:to-cyan-500/50 z-0 transition-colors duration-500" />
-              
+
               <div className="flex items-center gap-3 mb-4">
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/[0.05] border border-white/[0.1]">
                   <GraduationCap className="h-5 w-5 text-zinc-300" />
@@ -102,7 +82,7 @@ export default function Education() {
             >
               <div className="absolute top-1/2 -translate-y-1/2 -left-12 lg:-left-16 -translate-x-[50%] w-3 h-3 rounded-full bg-zinc-500 border-2 border-[#121212] z-10 transition-all duration-500 group-hover:bg-cyan-400 group-hover:border-cyan-400/20 group-hover:shadow-[0_0_15px_rgba(34,211,238,0.8)]" />
               <div className="absolute top-1/2 -translate-y-1/2 left-0 -translate-x-full w-12 lg:w-16 h-[2px] bg-gradient-to-l from-transparent to-white/[0.1] group-hover:to-cyan-500/50 z-0 transition-colors duration-500" />
-              
+
               <div className="flex items-center gap-3 mb-4">
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/[0.05] border border-white/[0.1]">
                   <GraduationCap className="h-5 w-5 text-zinc-300" />
@@ -131,7 +111,7 @@ export default function Education() {
 
       {/* Mobile Stack Layout */}
       <div className="md:hidden flex flex-col gap-6 pl-12 pr-4 relative">
-        {education.map((edu) => (
+        {educationItems.map((edu) => (
           <motion.div
             key={edu.id}
             initial={{ opacity: 0, x: 20 }}

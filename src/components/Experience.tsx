@@ -1,60 +1,21 @@
 "use client";
 
 import { motion } from "framer-motion";
-
-interface ExperienceItem {
-  id: number;
-  role: string;
-  company: string;
-  date: string;
-  description: string;
-  skills: string[];
-}
-
-const experiences: ExperienceItem[] = [
-  {
-    id: 5,
-    role: "Full Stack Developer",
-    company: "loriginal.org",
-    date: "May 2026 - Present (Montreal, QC)",
-    description: "Leading the development of the Artur.art and Loriginal.org platforms. Designing and implementing front-end React components and back-end Next.js API routes. Managing application lifecycle via GitHub and Vercel, and ensuring high performance and technical SEO.",
-    skills: ["React", "Next.js", "Vercel", "SEO", "CI/CD"],
-  },
-  {
-    id: 1,
-    role: "Freelance Full Stack Engineer",
-    company: "Self-Employed",
-    date: "Oct 2024 - March 2026 (Montreal, QC)",
-    description: "Specialized in advanced web analysis, backend automation, and AI-driven system development. Architected AI-powered automation platforms using GraphQL, AWS Lambda, and serverless frameworks to optimize enterprise workflows.",
-    skills: ["Node.js", "TypeScript", "AWS Lambda", "GraphQL", "AI/LLMs"],
-  },
-  {
-    id: 2,
-    role: "Manager",
-    company: "Subway",
-    date: "Jan 2024 - Present (Montreal, QC)",
-    description: "Managing daily operations and staffing in a fast-paced environment.",
-    skills: ["Management", "Operations"],
-  },
-  {
-    id: 3,
-    role: "Node.js Developer",
-    company: "JKSOL INFOTECH",
-    date: "Jul 2021 - Jul 2022 (India)",
-    description: "Engineered and optimized 12 backend APIs using Node.js, Express.js, and PostgreSQL, reducing server response times by 30% while supporting 50,000+ concurrent users.",
-    skills: ["Node.js", "PostgreSQL", "TypeORM", "WebSocket", "AWS EC2"],
-  },
-  {
-    id: 4,
-    role: "PHP Developer (Internship)",
-    company: "Differenz System",
-    date: "Dec 2020 - May 2021 (India)",
-    description: "Facilitated development and deployment of 8+ WordPress and PHP web applications, managing live production releases, and reducing downtime by 20%.",
-    skills: ["PHP", "WordPress", "JavaScript", "SQL"],
-  },
-];
+import { experience } from "@/translations/experience";
+import { useLanguage } from "@/libs/LanguageContext";
 
 export default function Experience() {
+  const { t, lang } = useLanguage();
+
+  const experiences = experience.items.map((item) => ({
+    id: item.id,
+    role: t(item.role),
+    company: t(item.company),
+    date: t(item.date),
+    description: t(item.description),
+    skills: item.skills,
+  }));
+
   const leftExps = experiences.filter((_, i) => i % 2 === 0);
   const rightExps = experiences.filter((_, i) => i % 2 !== 0);
 
@@ -62,10 +23,10 @@ export default function Experience() {
     <div className="w-full mb-32 relative">
       <div className="text-center md:text-left mb-16 px-6 md:px-0">
         <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white mb-4">
-          Experience
+          {t(experience.title)}
         </h2>
         <p className="text-zinc-400 max-w-xl md:mx-auto md:text-center text-left">
-          A track record of building scalable web and cloud-based applications.
+          {t(experience.subtitle)}
         </p>
       </div>
 
@@ -83,7 +44,7 @@ export default function Experience() {
             >
               <div className="absolute top-1/2 -translate-y-1/2 -right-12 lg:-right-16 translate-x-[50%] w-4 h-4 rounded-full bg-zinc-500 border-4 border-[#121212] z-10 transition-all duration-500 group-hover:bg-cyan-400 group-hover:border-cyan-400/20 group-hover:shadow-[0_0_15px_rgba(34,211,238,0.8)]" />
               <div className="absolute top-1/2 -translate-y-1/2 right-0 translate-x-full w-12 lg:w-16 h-[2px] bg-gradient-to-r from-transparent to-white/[0.1] group-hover:to-cyan-500/50 z-0 transition-colors duration-500" />
-              
+
               <p className="text-xs font-medium text-zinc-400 mb-2 uppercase tracking-wide">
                 {exp.date}
               </p>
@@ -97,7 +58,7 @@ export default function Experience() {
                 {exp.description}
               </p>
               <div className="flex flex-wrap gap-2">
-                {exp.skills.map(skill => (
+                {exp.skills.map((skill) => (
                   <span key={skill} className="px-3 py-1 text-xs font-medium text-zinc-300 bg-white/[0.05] rounded-full border border-white/[0.1]">
                     {skill}
                   </span>
@@ -119,7 +80,7 @@ export default function Experience() {
             >
               <div className="absolute top-1/2 -translate-y-1/2 -left-12 lg:-left-16 -translate-x-[50%] w-4 h-4 rounded-full bg-zinc-500 border-4 border-[#121212] z-10 transition-all duration-500 group-hover:bg-cyan-400 group-hover:border-cyan-400/20 group-hover:shadow-[0_0_15px_rgba(34,211,238,0.8)]" />
               <div className="absolute top-1/2 -translate-y-1/2 left-0 -translate-x-full w-12 lg:w-16 h-[2px] bg-gradient-to-l from-transparent to-white/[0.1] group-hover:to-cyan-500/50 z-0 transition-colors duration-500" />
-              
+
               <p className="text-xs font-medium text-zinc-400 mb-2 uppercase tracking-wide">
                 {exp.date}
               </p>
@@ -133,7 +94,7 @@ export default function Experience() {
                 {exp.description}
               </p>
               <div className="flex flex-wrap gap-2">
-                {exp.skills.map(skill => (
+                {exp.skills.map((skill) => (
                   <span key={skill} className="px-3 py-1 text-xs font-medium text-zinc-300 bg-white/[0.05] rounded-full border border-white/[0.1]">
                     {skill}
                   </span>
@@ -168,7 +129,7 @@ export default function Experience() {
               {exp.description}
             </p>
             <div className="flex flex-wrap gap-2">
-              {exp.skills.map(skill => (
+              {exp.skills.map((skill) => (
                 <span key={skill} className="px-2 py-1 text-[10px] font-medium text-zinc-300 bg-white/[0.05] rounded-full border border-white/[0.1]">
                   {skill}
                 </span>
