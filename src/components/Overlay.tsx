@@ -3,9 +3,11 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { hero } from "@/translations/hero";
+import { useLanguage } from "@/libs/LanguageContext";
 
 export default function Overlay() {
   const containerRef = useRef<HTMLDivElement>(null);
+  const { t } = useLanguage();
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -41,7 +43,7 @@ export default function Overlay() {
             {hero.name}
           </h1>
           <p className="mt-2 text-xl md:text-3xl font-light text-cyan-400 drop-shadow-[0_0_15px_rgba(34,211,238,0.5)] uppercase tracking-widest">
-            {hero.role.en}
+            {t(hero.role)}
           </p>
         </motion.div>
 
@@ -51,7 +53,7 @@ export default function Overlay() {
           className="absolute inset-0 flex flex-col items-start justify-center text-left pl-8 md:pl-24 w-full md:w-2/3"
         >
           <h2 className="text-4xl md:text-7xl font-bold tracking-tight text-white leading-tight drop-shadow-xl">
-            {hero.section2.en}
+            {t(hero.section2)}
           </h2>
         </motion.div>
 
@@ -61,8 +63,8 @@ export default function Overlay() {
           className="absolute inset-0 flex flex-col items-end justify-center text-right pr-8 md:pr-24 ml-auto w-full md:w-2/3"
         >
           <h2 className="text-4xl md:text-6xl font-medium tracking-tight text-white leading-snug drop-shadow-xl">
-            {hero.section3_p1.en}<span className="font-light italic text-cyan-300"> {hero.section3_p2.en}</span> <br />
-            <span className="font-bold underline decoration-cyan-500/50 underline-offset-8">{hero.section3_p3.en}</span>
+            {t(hero.section3_p1)}<span className="font-light italic text-cyan-300"> {t(hero.section3_p2)}</span> <br />
+            <span className="font-bold underline decoration-cyan-500/50 underline-offset-8">{t(hero.section3_p3)}</span>
           </h2>
         </motion.div>
 
@@ -74,10 +76,10 @@ export default function Overlay() {
           <div className="max-w-4xl p-8 md:p-12 rounded-3xl bg-black/40 border border-white/[0.05] backdrop-blur-xl shadow-2xl relative overflow-hidden group">
             <div className="absolute inset-0 bg-gradient-to-tr from-cyan-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
             <h3 className="text-3xl md:text-5xl font-bold text-white mb-6 drop-shadow-lg leading-tight">
-              {hero.section4_title.en}
+              {t(hero.section4_title)}
             </h3>
             <p className="text-lg md:text-xl font-light text-zinc-300 leading-relaxed shadow-black drop-shadow-md">
-              {hero.section4_description.en}
+              {t(hero.section4_description)}
             </p>
           </div>
         </motion.div>

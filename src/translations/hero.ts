@@ -6,6 +6,14 @@ export const hero = {
     fr: "Ingénieur Full-Stack",
     en: "Full-Stack Engineer",
   },
+  overviewTitle: {
+    fr: "Aperçu",
+    en: "Overview",
+  },
+  overviewDescription: {
+    fr: "Je suis un professionnel ambitieux, minutieux et analytique, passionné par la livraison de solutions haute performance, sécurisées et fiables.",
+    en: "I am an ambitious, detail-oriented, and analytical professional passionate about delivering high-performance, secure, and reliable solutions.",
+  },
   section2: {
     fr: "Architecture de plateformes cloud évolutives.",
     en: "Architecting scalable cloud platforms.",

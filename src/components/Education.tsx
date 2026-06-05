@@ -3,17 +3,19 @@
 import { motion } from "framer-motion";
 import { GraduationCap } from "lucide-react";
 import { education } from "@/translations/education";
-import type { EducationItem } from "@/libs/interfaces";
-
-const educationItems: EducationItem[] = education.items.map(item => ({
-  id: item.id,
-  degree: item.degree.en,
-  institution: item.institution.en,
-  date: item.date.en,
-  result: item.result?.en,
-}));
+import { useLanguage } from "@/libs/LanguageContext";
 
 export default function Education() {
+  const { t } = useLanguage();
+
+  const educationItems = education.items.map((item) => ({
+    id: item.id,
+    degree: t(item.degree),
+    institution: t(item.institution),
+    date: t(item.date),
+    result: item.result ? t(item.result) : undefined,
+  }));
+
   const leftEdu = educationItems.filter((_, i) => i % 2 === 0);
   const rightEdu = educationItems.filter((_, i) => i % 2 !== 0);
 
@@ -21,10 +23,10 @@ export default function Education() {
     <div className="w-full mb-32 relative">
       <div className="text-center md:text-left mb-16 px-6 md:px-0">
         <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white mb-4">
-          {education.title.en}
+          {t(education.title)}
         </h2>
         <p className="text-zinc-400 max-w-xl md:mx-auto md:text-center text-left">
-          {education.subtitle.en}
+          {t(education.subtitle)}
         </p>
       </div>
 

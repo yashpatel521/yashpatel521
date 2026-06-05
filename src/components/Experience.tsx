@@ -2,18 +2,20 @@
 
 import { motion } from "framer-motion";
 import { experience } from "@/translations/experience";
-import type { ExperienceItem } from "@/libs/interfaces";
-
-const experiences: ExperienceItem[] = experience.items.map(item => ({
-  id: item.id,
-  role: item.role.en,
-  company: item.company.en,
-  date: item.date.en,
-  description: item.description.en,
-  skills: item.skills,
-}));
+import { useLanguage } from "@/libs/LanguageContext";
 
 export default function Experience() {
+  const { t, lang } = useLanguage();
+
+  const experiences = experience.items.map((item) => ({
+    id: item.id,
+    role: t(item.role),
+    company: t(item.company),
+    date: t(item.date),
+    description: t(item.description),
+    skills: item.skills,
+  }));
+
   const leftExps = experiences.filter((_, i) => i % 2 === 0);
   const rightExps = experiences.filter((_, i) => i % 2 !== 0);
 
@@ -21,10 +23,10 @@ export default function Experience() {
     <div className="w-full mb-32 relative">
       <div className="text-center md:text-left mb-16 px-6 md:px-0">
         <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white mb-4">
-          {experience.title.en}
+          {t(experience.title)}
         </h2>
         <p className="text-zinc-400 max-w-xl md:mx-auto md:text-center text-left">
-          {experience.subtitle.en}
+          {t(experience.subtitle)}
         </p>
       </div>
 
@@ -56,7 +58,7 @@ export default function Experience() {
                 {exp.description}
               </p>
               <div className="flex flex-wrap gap-2">
-                {exp.skills.map(skill => (
+                {exp.skills.map((skill) => (
                   <span key={skill} className="px-3 py-1 text-xs font-medium text-zinc-300 bg-white/[0.05] rounded-full border border-white/[0.1]">
                     {skill}
                   </span>
@@ -92,7 +94,7 @@ export default function Experience() {
                 {exp.description}
               </p>
               <div className="flex flex-wrap gap-2">
-                {exp.skills.map(skill => (
+                {exp.skills.map((skill) => (
                   <span key={skill} className="px-3 py-1 text-xs font-medium text-zinc-300 bg-white/[0.05] rounded-full border border-white/[0.1]">
                     {skill}
                   </span>
@@ -127,7 +129,7 @@ export default function Experience() {
               {exp.description}
             </p>
             <div className="flex flex-wrap gap-2">
-              {exp.skills.map(skill => (
+              {exp.skills.map((skill) => (
                 <span key={skill} className="px-2 py-1 text-[10px] font-medium text-zinc-300 bg-white/[0.05] rounded-full border border-white/[0.1]">
                   {skill}
                 </span>

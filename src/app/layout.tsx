@@ -84,6 +84,8 @@ export const metadata: Metadata = {
 
 import CustomCursor from "@/components/CustomCursor";
 import InteractiveGrid from "@/components/InteractiveGrid";
+import LanguageToggle from "@/components/LanguageToggle";
+import { LanguageProvider } from "@/libs/LanguageContext";
 
 export default function RootLayout({
   children,
@@ -95,9 +97,12 @@ export default function RootLayout({
       <body
         className={`${inter.variable} font-sans antialiased selection:bg-cyan-500/30 selection:text-cyan-200 bg-[#121212]`}
       >
-        <InteractiveGrid />
-        <CustomCursor />
-        {children}
+        <LanguageProvider>
+          <InteractiveGrid />
+          <CustomCursor />
+          <LanguageToggle />
+          {children}
+        </LanguageProvider>
       </body>
     </html>
   );

@@ -4,30 +4,31 @@ import Image from "next/image";
 import { Github } from "lucide-react";
 import { motion } from "framer-motion";
 import { projects } from "@/translations/projects";
-import type { ProjectItem } from "@/libs/interfaces";
-import { IMG_PATH } from "@/libs/constants";
-
-const projectItems: ProjectItem[] = projects.items.map(item => ({
-  id: item.id,
-  title: typeof item.title === 'string' ? item.title : item.title.en,
-  category: item.category.en,
-  description: item.description.en,
-  image: item.image,
-  tech: item.tech,
-  link: item.link,
-}));
+import { useLanguage } from "@/libs/LanguageContext";
 
 export default function ProjectSection() {
+  const { t } = useLanguage();
+
+  const projectItems = projects.items.map((item) => ({
+    id: item.id,
+    title: typeof item.title === "string" ? item.title : t(item.title),
+    category: t(item.category),
+    description: t(item.description),
+    image: item.image,
+    tech: item.tech,
+    link: item.link,
+  }));
+
   return (
     <section className="relative z-20 bg-gradient-to-b from-transparent via-[#0a0f1c]/80 to-[#050814]/90 py-32 px-6 md:px-12 lg:px-24 border-t border-cyan-500/[0.1]">
       <div className="max-w-7xl mx-auto">
 
         <div className="flex flex-col text-center md:text-left mb-20">
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white mb-4 drop-shadow-[0_0_15px_rgba(34,211,238,0.3)]">
-            {projects.title.en}
+            {t(projects.title)}
           </h2>
           <p className="text-zinc-400 max-w-2xl text-lg font-light md:mx-0 mx-auto">
-            {projects.subtitle.en}
+            {t(projects.subtitle)}
           </p>
         </div>
 
@@ -42,7 +43,7 @@ export default function ProjectSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ duration: 0.6, ease: "easeOut" }}
-                className={`flex flex-col md:flex-row items-center gap-12 lg:gap-20 ${isLeft ? '' : 'md:flex-row-reverse'}`}
+                className={`flex flex-col md:flex-row items-center gap-12 lg:gap-20 ${isLeft ? "" : "md:flex-row-reverse"}`}
               >
                 {/* Image Section */}
                 <div className="w-full md:w-1/2 relative group">
@@ -74,17 +75,22 @@ export default function ProjectSection() {
                     </p>
                   </div>
                   <div className="flex flex-wrap gap-2 mb-8 justify-center md:justify-start">
-                    {project.tech.map((t) => (
-                      <span key={t} className="px-3 py-1 text-xs font-medium text-cyan-100 bg-cyan-900/30 rounded-full border border-cyan-500/20">
-                        {t}
+                    {project.tech.map((tech) => (
+                      <span key={tech} className="px-3 py-1 text-xs font-medium text-cyan-100 bg-cyan-900/30 rounded-full border border-cyan-500/20">
+                        {tech}
                       </span>
                     ))}
                   </div>
 
                   <div className="flex gap-4">
                     {project.link && (
-                      <a href={project.link} target="blank" rel="noreferrer" className="flex items-center gap-2 h-12 px-6 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 font-medium transition-all hover:bg-cyan-500 hover:text-[#050814] hover:shadow-[0_0_20px_rgba(34,211,238,0.5)]">
-                        {projects.viewCode.en} <Github size={16} />
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="flex items-center gap-2 h-12 px-6 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 font-medium transition-all hover:bg-cyan-500 hover:text-[#050814] hover:shadow-[0_0_20px_rgba(34,211,238,0.5)]"
+                      >
+                        {t(projects.viewCode)} <Github size={16} />
                       </a>
                     )}
                   </div>
