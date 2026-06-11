@@ -42,6 +42,7 @@ export interface ExperienceTranslationItem {
   date: TranslatableString;
   description: TranslatableString;
   skills: string[];
+  link?: string;
 }
 
 export interface EducationTranslationItem {
@@ -66,4 +67,8 @@ export interface ProjectTranslationItem {
   image: string;
   tech: string[];
   link?: string;
+  githubLinks?: {
+    frontend?: string;
+    backend?: string;
+  };
 }

@@ -1,5 +1,3 @@
-import type { Language } from "@/libs/types";
-
 export const hero = {
   name: "Yash Patel.",
   role: {
@@ -11,8 +9,8 @@ export const hero = {
     en: "Overview",
   },
   overviewDescription: {
-    fr: "Je suis un professionnel ambitieux, minutieux et analytique, passionné par la livraison de solutions haute performance, sécurisées et fiables.",
-    en: "I am an ambitious, detail-oriented, and analytical professional passionate about delivering high-performance, secure, and reliable solutions.",
+    fr: "Ingénieur logiciel Full-Stack avec plus de 3 ans d'expérience dans la création d'applications Web évolutives, de systèmes backend distribués et d'interfaces frontend réactives avec React.js, Next.js, Node.js, TypeScript, PostgreSQL, Redis et AWS. Expérimenté dans la conception de systèmes de bout en bout, notamment des API REST/GraphQL, des architectures événementielles et des plateformes cloud sans serveur. Forte concentration sur la conception de systèmes, l'optimisation des performances, l'évolutivité des API et l'ingénierie UI/UX de qualité production.",
+    en: "Full-Stack Software Engineer with 3+ years of experience building scalable web applications, distributed backend systems, and responsive frontend interfaces using React.js, Next.js, Node.js, TypeScript, PostgreSQL, Redis, and AWS. Experienced in designing end-to-end systems including REST/GraphQL APIs, event-driven architectures, and serverless cloud platforms. Strong focus on system design, performance optimization, API scalability, and production-grade UI/UX engineering.",
   },
   section2: {
     fr: "Architecture de plateformes cloud évolutives.",
