@@ -36,13 +36,13 @@ export default function Home() {
               href="https://www.linkedin.com/in/yash-patel-521p/"
               target="_blank"
               rel="noreferrer"
-              className="h-12 w-12 rounded-full bg-white/[0.05] border border-white/[0.05] flex items-center justify-center text-zinc-300 transition-all hover:bg-[#0077b5] hover:text-white hover:border-transparent hover:scale-105 active:scale-95"
+              className="h-12 w-12 rounded-full bg-white/5 border border-white/5 flex items-center justify-center text-zinc-300 transition-all hover:bg-[#0077b5] hover:text-white hover:border-transparent hover:scale-105 active:scale-95"
             >
               <Linkedin size={20} />
             </a>
             <a
               href="mailto:yash1451999@gmail.com"
-              className="h-12 w-12 rounded-full bg-white/[0.05] border border-white/[0.05] flex items-center justify-center text-zinc-300 transition-all hover:bg-red-500 hover:text-white hover:border-transparent hover:scale-105 active:scale-95"
+              className="h-12 w-12 rounded-full bg-white/5 border border-white/5 flex items-center justify-center text-zinc-300 transition-all hover:bg-red-500 hover:text-white hover:border-transparent hover:scale-105 active:scale-95"
             >
               <Mail size={20} />
             </a>
@@ -50,7 +50,7 @@ export default function Home() {
               href="https://github.com/yashpatel521"
               target="_blank"
               rel="noreferrer"
-              className="h-12 w-12 rounded-full bg-white/[0.05] border border-white/[0.05] flex items-center justify-center text-zinc-300 transition-all hover:bg-white hover:text-black hover:border-transparent hover:scale-105 active:scale-95"
+              className="h-12 w-12 rounded-full bg-white/5 border border-white/5 flex items-center justify-center text-zinc-300 transition-all hover:bg-white hover:text-black hover:border-transparent hover:scale-105 active:scale-95"
             >
               <Github size={20} />
             </a>

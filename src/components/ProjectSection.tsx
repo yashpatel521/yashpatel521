@@ -46,7 +46,7 @@ export default function ProjectSection() {
                 className={`w-full relative group flex flex-col md:flex-row items-center gap-12 lg:gap-20 ${isLeft ? "" : "md:flex-row-reverse"}`}
               >
                 {/* Horizontal line connecting image and text on desktop */}
-                <div className="hidden md:block absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-12 lg:w-20 h-[1px] bg-gradient-to-r from-cyan-500/20 via-cyan-400 to-cyan-500/20 z-10 transition-all duration-500 group-hover:h-[2px] group-hover:shadow-[0_0_8px_rgba(34,211,238,0.5)]" />
+                <div className="hidden md:block absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-12 lg:w-20 h-px bg-linear-to-r from-cyan-500/20 via-cyan-400 to-cyan-500/20 z-10 transition-all duration-500 group-hover:h-0.5 group-hover:shadow-[0_0_8px_rgba(34,211,238,0.5)]" />
                 {/* Image Section */}
                 <div className="w-full md:w-1/2 relative group">
                   <div className="absolute inset-0 bg-linear-gradient-to-tr from-cyan-500/20 to-blue-600/20 rounded-2xl blur-xl transition-all duration-700 group-hover:blur-2xl group-hover:from-cyan-400/30 group-hover:to-blue-500/30 opacity-50" />
@@ -94,8 +94,9 @@ export default function ProjectSection() {
                                   !/^\d+\)|^\d+\.\s|^🔹/.test(trimmed)
                                 )
                                   return null;
-                                const match =
-                                  trimmed.match(/^(\d+\)|🔹)\s*(.*)/s);
+                                const match = trimmed.match(
+                                  /^(\d+\)|🔹)\s*([\s\S]*)/,
+                                );
                                 const marker = match ? match[1] : "•";
                                 const text = match ? match[2] : trimmed;
                                 return (
