@@ -14,6 +14,7 @@ export default function Experience() {
     date: t(item.date),
     description: t(item.description),
     skills: item.skills,
+    link: item.link,
   }));
 
   const leftExps = experiences.filter((_, i) => i % 2 === 0);
@@ -40,10 +41,10 @@ export default function Experience() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.5, ease: "easeOut" }}
-              className="w-full relative group p-6 xl:p-8 rounded-2xl bg-white/[0.03] border border-white/[0.05] backdrop-blur-md transition-all duration-500 hover:bg-white/[0.05] hover:border-white/[0.1] hover:shadow-[0_0_40px_-10px_rgba(255,255,255,0.1)] text-left"
+              className="w-full relative group p-6 xl:p-8 rounded-2xl bg-white/3 border border-white/5 backdrop-blur-md transition-all duration-500 hover:bg-white/5 hover:border-white/10 hover:shadow-[0_0_40px_-10px_rgba(255,255,255,0.1)] text-left"
             >
               <div className="absolute top-1/2 -translate-y-1/2 -right-12 lg:-right-16 translate-x-[50%] w-4 h-4 rounded-full bg-zinc-500 border-4 border-[#121212] z-10 transition-all duration-500 group-hover:bg-cyan-400 group-hover:border-cyan-400/20 group-hover:shadow-[0_0_15px_rgba(34,211,238,0.8)]" />
-              <div className="absolute top-1/2 -translate-y-1/2 right-0 translate-x-full w-12 lg:w-16 h-[2px] bg-gradient-to-r from-transparent to-white/[0.1] group-hover:to-cyan-500/50 z-0 transition-colors duration-500" />
+              <div className="absolute top-1/2 -translate-y-1/2 right-0 translate-x-full w-12 lg:w-16 h-0.5 bg-linear-to-r from-transparent to-white/10 group-hover:to-cyan-500/50 z-0 transition-colors duration-500" />
 
               <p className="text-xs font-medium text-zinc-400 mb-2 uppercase tracking-wide">
                 {exp.date}
@@ -52,14 +53,49 @@ export default function Experience() {
                 {exp.role}
               </h3>
               <h4 className="text-lg text-zinc-300 font-light italic mb-4">
-                {exp.company}
+                {exp.link ? (
+                  <a
+                    href={exp.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-cyan-400 transition-colors inline-flex items-center gap-1.5"
+                  >
+                    {exp.company}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="lucide lucide-external-link"
+                    >
+                      <path d="M15 3h6v6" />
+                      <path d="M10 14 21 3" />
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                    </svg>
+                  </a>
+                ) : (
+                  exp.company
+                )}
               </h4>
-              <p className="text-zinc-400 font-light leading-relaxed mb-6 text-sm">
-                {exp.description}
-              </p>
+              <div className="text-zinc-400 font-light leading-relaxed mb-6 text-sm flex flex-col gap-2">
+                {exp.description.split("\n").map((line, idx) => (
+                  <p key={idx} className="flex gap-2 items-start">
+                    <span className="text-cyan-400 shrink-0 select-none">•</span>
+                    <span>{line.replace(/^[–-]\s*/, "")}</span>
+                  </p>
+                ))}
+              </div>
               <div className="flex flex-wrap gap-2">
                 {exp.skills.map((skill) => (
-                  <span key={skill} className="px-3 py-1 text-xs font-medium text-zinc-300 bg-white/[0.05] rounded-full border border-white/[0.1]">
+                  <span
+                    key={skill}
+                    className="px-3 py-1 text-xs font-medium text-zinc-300 bg-white/5 rounded-full border border-white/10"
+                  >
                     {skill}
                   </span>
                 ))}
@@ -76,10 +112,10 @@ export default function Experience() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
-              className="w-full relative group p-6 xl:p-8 rounded-2xl bg-white/[0.03] border border-white/[0.05] backdrop-blur-md transition-all duration-500 hover:bg-white/[0.05] hover:border-white/[0.1] hover:shadow-[0_0_40px_-10px_rgba(255,255,255,0.1)] text-left"
+              className="w-full relative group p-6 xl:p-8 rounded-2xl bg-white/3 border border-white/5 backdrop-blur-md transition-all duration-500 hover:bg-white/5 hover:border-white/10 hover:shadow-[0_0_40px_-10px_rgba(255,255,255,0.1)] text-left"
             >
               <div className="absolute top-1/2 -translate-y-1/2 -left-12 lg:-left-16 -translate-x-[50%] w-4 h-4 rounded-full bg-zinc-500 border-4 border-[#121212] z-10 transition-all duration-500 group-hover:bg-cyan-400 group-hover:border-cyan-400/20 group-hover:shadow-[0_0_15px_rgba(34,211,238,0.8)]" />
-              <div className="absolute top-1/2 -translate-y-1/2 left-0 -translate-x-full w-12 lg:w-16 h-[2px] bg-gradient-to-l from-transparent to-white/[0.1] group-hover:to-cyan-500/50 z-0 transition-colors duration-500" />
+              <div className="absolute top-1/2 -translate-y-1/2 left-0 -translate-x-full w-12 lg:w-16 h-0.5 bg-linear-to-l from-transparent to-white/10 group-hover:to-cyan-500/50 z-0 transition-colors duration-500" />
 
               <p className="text-xs font-medium text-zinc-400 mb-2 uppercase tracking-wide">
                 {exp.date}
@@ -88,14 +124,49 @@ export default function Experience() {
                 {exp.role}
               </h3>
               <h4 className="text-lg text-zinc-300 font-light italic mb-4">
-                {exp.company}
+                {exp.link ? (
+                  <a
+                    href={exp.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-cyan-400 transition-colors inline-flex items-center gap-1.5"
+                  >
+                    {exp.company}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="lucide lucide-external-link"
+                    >
+                      <path d="M15 3h6v6" />
+                      <path d="M10 14 21 3" />
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                    </svg>
+                  </a>
+                ) : (
+                  exp.company
+                )}
               </h4>
-              <p className="text-zinc-400 font-light leading-relaxed mb-6 text-sm">
-                {exp.description}
-              </p>
+              <div className="text-zinc-400 font-light leading-relaxed mb-6 text-sm flex flex-col gap-2">
+                {exp.description.split("\n").map((line, idx) => (
+                  <p key={idx} className="flex gap-2 items-start">
+                    <span className="text-cyan-400 shrink-0 select-none">•</span>
+                    <span>{line.replace(/^[–-]\s*/, "")}</span>
+                  </p>
+                ))}
+              </div>
               <div className="flex flex-wrap gap-2">
                 {exp.skills.map((skill) => (
-                  <span key={skill} className="px-3 py-1 text-xs font-medium text-zinc-300 bg-white/[0.05] rounded-full border border-white/[0.1]">
+                  <span
+                    key={skill}
+                    className="px-3 py-1 text-xs font-medium text-zinc-300 bg-white/5 rounded-full border border-white/10"
+                  >
                     {skill}
                   </span>
                 ))}
@@ -114,7 +185,7 @@ export default function Experience() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.4, ease: "easeOut" }}
-            className="w-full relative group p-5 rounded-2xl bg-white/[0.03] border border-white/[0.05] backdrop-blur-md text-left"
+            className="w-full relative group p-5 rounded-2xl bg-white/3 border border-white/5 backdrop-blur-md text-left"
           >
             <p className="text-xs font-medium text-zinc-400 mb-1 uppercase tracking-wide">
               {exp.date}
@@ -123,14 +194,49 @@ export default function Experience() {
               {exp.role}
             </h3>
             <h4 className="text-sm text-zinc-300 font-light italic mb-3">
-              {exp.company}
+              {exp.link ? (
+                <a
+                  href={exp.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:text-cyan-400 transition-colors inline-flex items-center gap-1"
+                >
+                  {exp.company}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="12"
+                    height="12"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="lucide lucide-external-link"
+                  >
+                    <path d="M15 3h6v6" />
+                    <path d="M10 14 21 3" />
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  </svg>
+                </a>
+              ) : (
+                exp.company
+              )}
             </h4>
-            <p className="text-zinc-400 font-light leading-relaxed mb-4 text-sm">
-              {exp.description}
-            </p>
+            <div className="text-zinc-400 font-light leading-relaxed mb-4 text-sm flex flex-col gap-1.5">
+              {exp.description.split("\n").map((line, idx) => (
+                <p key={idx} className="flex gap-2 items-start">
+                  <span className="text-cyan-400 shrink-0 select-none">•</span>
+                  <span>{line.replace(/^[–-]\s*/, "")}</span>
+                </p>
+              ))}
+            </div>
             <div className="flex flex-wrap gap-2">
               {exp.skills.map((skill) => (
-                <span key={skill} className="px-2 py-1 text-[10px] font-medium text-zinc-300 bg-white/[0.05] rounded-full border border-white/[0.1]">
+                <span
+                  key={skill}
+                  className="px-2 py-1 text-[10px] font-medium text-zinc-300 bg-white/5 rounded-full border border-white/10"
+                >
                   {skill}
                 </span>
               ))}

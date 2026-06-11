@@ -1,8 +1,12 @@
-import type { Language } from "@/libs/types";
 import type { ProjectTranslationItem } from "@/libs/interfaces";
 import { IMG_PATH } from "@/libs/constants";
 
-export const projects: { title: { fr: string; en: string }; subtitle: { fr: string; en: string }; viewCode: { fr: string; en: string }; items: ProjectTranslationItem[] } = {
+export const projects: {
+  title: { fr: string; en: string };
+  subtitle: { fr: string; en: string };
+  viewCode: { fr: string; en: string };
+  items: ProjectTranslationItem[];
+} = {
   title: {
     fr: "Projets Vedettes",
     en: "Featured Projects",
@@ -17,21 +21,29 @@ export const projects: { title: { fr: string; en: string }; subtitle: { fr: stri
   },
   items: [
     {
-      id: 1,
+      id: 7,
       title: {
-        fr: "SmartOps – Plateforme SaaS d'Automatisation IA",
-        en: "SmartOps – AI Automation SaaS Platform",
+        fr: "L'Original – Plateforme & Galerie d'Art Urbain",
+        en: "L'Original – Urban Art Gallery & Platform",
       },
       category: {
-        fr: "Oct 2024 – Nov 2025",
-        en: "Oct 2024 – Nov 2025",
+        fr: "Mai 2026 – Présent",
+        en: "May 2026 – Present",
       },
       description: {
-        fr: "Plateforme SaaS propulsée par l'IA automatisant les flux de travail d'entreprise, le routage des tickets et les prévisions opérationnelles. Intégration de l'API OpenAI pour l'automatisation propulsée par l'IA, réduisant les frais généraux opérationnels de 45% via une architecture événementielle.",
-        en: "AI-powered SaaS platform automating business workflows, ticket routing, and operational forecasting. Integrated OpenAI API for AI-driven automation, reducing operational overhead by 45% via an event-driven architecture.",
+        fr: "Ingénierie front-end et optimisation des performances pour la plateforme en production loriginal.org. Réalisations clés : 1) Refonte de l'interface responsive (Hero & VideoModal) avec une approche mobile-first, améliorant la rétention des utilisateurs mobiles de 25%. 2) Conception d'un système de composants FAQ Accordion réutilisable et standardisé, éliminant 40% de code redondant. 3) Intégration d'un carrousel multilingue infini d'avis Google/TripAdvisor avec chargement différé d'images au format WEBP optimisé. 4) Développement d'une section interactive dotée d'animations fluides de cartes (swipe/stack) sous Framer Motion, optimisée avec useMemo pour prévenir les rendus superflus. 5) Restructuration de la galerie de location d'art vers une architecture de traduction centralisée, améliorant l'internationalisation et la sécurité du routage.",
+        en: "Front-end engineering and performance optimization for the production-grade loriginal.org platform. Key achievements: 1) Overhauled responsive UI (Hero & VideoModal) adopting mobile-first practices, boosting mobile user retention by 25%. 2) Architected a standardized, highly reusable FAQ Accordion component system, reducing codebase redundancy by 40%. 3) Integrated an infinite multi-language Google/TripAdvisor reviews carousel featuring lazy-loaded and optimized WEBP imagery. 4) Developed an interactive homepage experience featuring fluid card-swipe animations using Framer Motion, optimized via useMemo to eliminate redundant renders. 5) Restructured the Art Rental gallery system with a centralized localization architecture, enhancing routing safety and internationalization scaling.",
       },
-      image: `${IMG_PATH}/projects/smartops.png`,
-      tech: ["Next.js", "Node.js", "Redis", "PostgreSQL", "OpenAI"],
+      image: `${IMG_PATH}/projects/loriginal.png`,
+      tech: [
+        "React.js",
+        "Next.js",
+        "Tailwind CSS",
+        "TypeScript",
+        "Framer Motion",
+        "Vercel",
+      ],
+      link: "https://www.loriginal.org/",
     },
     {
       id: 2,
@@ -66,6 +78,11 @@ export const projects: { title: { fr: string; en: string }; subtitle: { fr: stri
       },
       image: `${IMG_PATH}/projects/sixywin.png`,
       tech: ["React.js", "Supabase", "Tailwind CSS", "Vercel"],
+      link: "https://sixywin.com/",
+      githubLinks: {
+        frontend: "https://github.com/yashpatel521/sixywin-frontend",
+        backend: "https://github.com/yashpatel521/sixywin-backend",
+      },
     },
     {
       id: 4,
