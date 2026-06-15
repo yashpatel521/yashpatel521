@@ -8,12 +8,14 @@ import Education from "@/components/Education";
 import Projects from "@/components/Projects"; // Skills
 import LeetCode from "@/components/LeetCode";
 import ProjectSection from "@/components/ProjectSection";
-import { Github, Linkedin, Mail } from "lucide-react";
+import Link from "next/link";
+import { Github, Linkedin, Mail, FileText } from "lucide-react";
 import { useLanguage } from "@/libs/LanguageContext";
 import { hero } from "@/translations/hero";
+import { IMG_PATH } from "@/libs/constants";
 
 export default function Home() {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
 
   return (
     <main className="min-h-screen font-sans">
@@ -32,6 +34,13 @@ export default function Home() {
             <p className="text-zinc-400">{t(hero.overviewDescription)}</p>
           </div>
           <div className="flex gap-4">
+            <Link
+              href="/resume"
+              className="h-12 w-12 rounded-full bg-white/5 border border-white/5 flex items-center justify-center text-zinc-300 transition-all hover:bg-cyan-500 hover:text-black hover:border-transparent hover:scale-105 active:scale-95"
+              title={lang === "fr" ? "Voir le CV" : "View Resume"}
+            >
+              <FileText size={20} />
+            </Link>
             <a
               href="https://www.linkedin.com/in/yash-patel-521p/"
               target="_blank"

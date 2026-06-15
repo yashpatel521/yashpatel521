@@ -91,6 +91,7 @@ export const metadata: Metadata = {
 import CustomCursor from "@/components/CustomCursor";
 import InteractiveGrid from "@/components/InteractiveGrid";
 import LanguageToggle from "@/components/LanguageToggle";
+import ResumeButton from "@/components/ResumeButton";
 import { LanguageProvider } from "@/libs/LanguageContext";
 
 export default function RootLayout({
@@ -107,6 +108,7 @@ export default function RootLayout({
           <InteractiveGrid />
           <CustomCursor />
           <LanguageToggle />
+          <ResumeButton />
           {children}
         </LanguageProvider>
       </body>

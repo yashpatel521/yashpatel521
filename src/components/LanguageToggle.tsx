@@ -13,7 +13,7 @@ export default function LanguageToggle() {
         fixed top-5 right-5 z-[9999]
         flex items-center gap-1.5
         px-3 py-1.5 rounded-full
-        bg-white/[0.06] border border-white/[0.12]
+        bg-zinc-900/90 border border-white/10
         text-xs font-semibold tracking-widest uppercase
         text-zinc-300 backdrop-blur-md
         transition-all duration-300
