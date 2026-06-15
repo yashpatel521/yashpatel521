@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { Github } from "lucide-react";
 import { motion } from "framer-motion";
 import { projects } from "@/translations/projects";
@@ -49,7 +50,7 @@ export default function ProjectSection() {
                 <div className="hidden md:block absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-12 lg:w-20 h-px bg-linear-to-r from-cyan-500/20 via-cyan-400 to-cyan-500/20 z-10 transition-all duration-500 group-hover:h-0.5 group-hover:shadow-[0_0_8px_rgba(34,211,238,0.5)]" />
                 {/* Image Section */}
                 <div className="w-full md:w-1/2 relative group">
-                  <div className="absolute inset-0 bg-linear-gradient-to-tr from-cyan-500/20 to-blue-600/20 rounded-2xl blur-xl transition-all duration-700 group-hover:blur-2xl group-hover:from-cyan-400/30 group-hover:to-blue-500/30 opacity-50" />
+                  <div className="absolute inset-0 bg-linear-to-tr from-cyan-500/20 to-blue-600/20 rounded-2xl blur-xl transition-all duration-700 group-hover:blur-2xl group-hover:from-cyan-400/30 group-hover:to-blue-500/30 opacity-50" />
                   <div className="relative rounded-2xl overflow-hidden border border-white/5 shadow-2xl bg-[#1a1a1a]">
                     <div className="w-full relative aspect-video bg-black/50">
                       <Image
@@ -134,12 +135,34 @@ export default function ProjectSection() {
                   </div>
 
                   <div className="flex flex-wrap gap-4 justify-center md:justify-start">
+                    <Link
+                      href={`/projects/${project.id}`}
+                      className="flex items-center gap-2 h-12 px-6 rounded-full bg-cyan-500 text-[#050814] font-semibold transition-all hover:bg-cyan-400 hover:shadow-[0_0_20px_rgba(34,211,238,0.5)] hover:scale-105 active:scale-95"
+                    >
+                      {lang === "fr" ? "Voir les Détails" : "View Details"}
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="lucide lucide-arrow-right"
+                      >
+                        <path d="M5 12h14" />
+                        <path d="m12 5 7 7-7 7" />
+                      </svg>
+                    </Link>
+
                     {project.link && (
                       <a
                         href={project.link}
                         target="_blank"
                         rel="noreferrer"
-                        className="flex items-center gap-2 h-12 px-6 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 font-medium transition-all hover:bg-cyan-500 hover:text-[#050814] hover:shadow-[0_0_20px_rgba(34,211,238,0.5)]"
+                        className="flex items-center gap-2 h-12 px-6 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 font-medium transition-all hover:bg-cyan-500/20 hover:text-cyan-300 hover:border-cyan-500/50"
                       >
                         {project.link.includes("github.com") ? (
                           <>

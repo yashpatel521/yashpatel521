@@ -72,3 +72,32 @@ export interface ProjectTranslationItem {
     backend?: string;
   };
 }
+
+export interface ProjectDetailTranslationItem {
+  id: number;
+  title: TranslatableString | string;
+  subtitle: TranslatableString;
+  overview: TranslatableString;
+  challenges: {
+    title: TranslatableString;
+    description: TranslatableString;
+  }[];
+  features: TranslatableString[];
+  techExplanation: {
+    tech: string;
+    explanation: TranslatableString;
+  }[];
+  contributions: TranslatableString[];
+  metrics?: {
+    label: TranslatableString;
+    value: string;
+  }[];
+  image: string;
+  tech: string[];
+  link?: string;
+  githubLinks?: {
+    frontend?: string;
+    backend?: string;
+  };
+}
+

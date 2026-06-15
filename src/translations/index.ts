@@ -6,3 +6,4 @@ export { problemSolving } from './problemSolving';
 export { hero } from './hero';
 export { skills } from './skills';
 export { projects } from './projects';
+export { projectDetails } from './projectDetails';
