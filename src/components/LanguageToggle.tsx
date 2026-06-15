@@ -10,7 +10,7 @@ export default function LanguageToggle() {
       onClick={toggle}
       aria-label={lang === "en" ? "Switch to French" : "Passer en anglais"}
       className="
-        fixed top-5 right-5 z-[9999]
+        fixed top-5 right-5 z-9999
         flex items-center gap-1.5
         px-3 py-1.5 rounded-full
         bg-zinc-900/90 border border-white/10
@@ -22,9 +22,13 @@ export default function LanguageToggle() {
         active:scale-95
       "
     >
-      <span className={lang === "en" ? "text-cyan-400" : "text-zinc-500"}>EN</span>
+      <span className={lang === "en" ? "text-cyan-400" : "text-zinc-500"}>
+        EN
+      </span>
       <span className="text-zinc-600">/</span>
-      <span className={lang === "fr" ? "text-cyan-400" : "text-zinc-500"}>FR</span>
+      <span className={lang === "fr" ? "text-cyan-400" : "text-zinc-500"}>
+        FR
+      </span>
     </button>
   );
 }

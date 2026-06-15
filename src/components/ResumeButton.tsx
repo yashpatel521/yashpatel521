@@ -12,7 +12,7 @@ export default function ResumeButton() {
       download
       aria-label={lang === "en" ? "Download Resume" : "Télécharger le CV"}
       className="
-        fixed top-5 left-5 z-[9999]
+        fixed top-5 left-5 z-9999
         flex items-center gap-1.5
         px-3 py-1.5 rounded-full
         bg-zinc-900/90 border border-white/10
