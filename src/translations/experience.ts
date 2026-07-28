@@ -58,12 +58,12 @@ export const experience: { title: { fr: string; en: string }; subtitle: { fr: st
         en: "Software Engineering Student (Full-Time)",
       },
       company: {
-        fr: "Collège TAV (Montréal, QC)",
-        en: "TAV College (Montreal, QC)",
+        fr: "Collège TAV (Montréal, QC, Canada)",
+        en: "TAV College (Montreal, QC, Canada)",
       },
       date: {
-        fr: "Mars 2023 – Oct 2024",
-        en: "Mar 2023 – Oct 2024",
+        fr: "6 Fév 2023 – 15 Jan 2025 (≈2 ans)",
+        en: "Feb 6, 2023 – Jan 15, 2025 (≈2 yrs)",
       },
       description: {
         fr: "– Étudier le développement full-stack, notamment l'ingénierie de l'interface utilisateur frontend, les systèmes backend et l'architecture cloud.\n– Créer plusieurs projets full-stack à l'aide de React, Node.js et d'API REST avec intégration de bases de données.",
@@ -74,16 +74,16 @@ export const experience: { title: { fr: string; en: string }; subtitle: { fr: st
     {
       id: 3,
       role: {
-        fr: "Développeur Backend Node.js",
-        en: "Node.js Backend Developer",
+        fr: "Développeur Logiciel",
+        en: "Software Developer",
       },
       company: {
-        fr: "JKSOL Infotech (Inde)",
-        en: "JKSOL Infotech (India)",
+        fr: "JKSOL (Surat, Gujarat, Inde)",
+        en: "JKSOL (Surat, Gujarat, India)",
       },
       date: {
-        fr: "Juil 2021 – Juil 2022",
-        en: "Jul 2021 – Jul 2022",
+        fr: "20 Déc 2021 – 15 Juin 2022 (≈6 mois)",
+        en: "Dec 20, 2021 – Jun 15, 2022 (≈6 mos)",
       },
       description: {
         fr: "– Développer plus de 12 API REST et intégrer des composants frontend pour les applications de production.\n– Améliorer les performances de la base de données de 30% grâce à des stratégies d'optimisation des requêtes et d'indexation.\n– Travailler sur des fonctionnalités full-stack intégrant l'interface utilisateur, la logique backend et la conception d'API.",
@@ -94,16 +94,16 @@ export const experience: { title: { fr: string; en: string }; subtitle: { fr: st
     {
       id: 4,
       role: {
-        fr: "Stagiaire Développeur PHP",
-        en: "PHP Developer Intern",
+        fr: "Stagiaire Développeur Logiciel",
+        en: "Software Developer Intern",
       },
       company: {
-        fr: "Differenz System (Inde)",
-        en: "Differenz System (India)",
+        fr: "Differenz System (Surat, Gujarat, Inde)",
+        en: "Differenz System (Surat, Gujarat, India)",
       },
       date: {
-        fr: "Déc 2020 – Mai 2021",
-        en: "Dec 2020 – May 2021",
+        fr: "1 Jan 2021 – 30 Juin 2021 (6 mois)",
+        en: "Jan 1, 2021 – Jun 30, 2021 (6 mos)",
       },
       description: {
         fr: "– Créer des interfaces frontend réactives à l'aide de HTML, CSS et JavaScript pour les systèmes de production.\n– Optimiser le backend PHP et les requêtes SQL, améliorant ainsi les performances globales de l'application.",

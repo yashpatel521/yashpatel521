@@ -31,16 +31,16 @@ I am a passionate **Full-Stack Engineer** based in Montreal, QC, dedicated to bu
   - Leading development of Artur.art and Loriginal.org platforms. Implementing React components and Next.js API routes with focus on performance and technical SEO.
 - **Freelance Full Stack Engineer** | *Montreal, QC (Oct 2024 - March 2026)*
   - Architecting AI-powered automation platforms using serverless frameworks.
-- **Node.js Developer** | *JKSOL INFOTECH (Jul 2021 - Jul 2022)*
+- **Software Developer** | *JKSOL (Surat, Gujarat, India)* (Dec 20, 2021 – Jun 15, 2022)
   - Optimized 12+ APIs for 50,000+ concurrent users, reducing lag by 30%.
-- **PHP Developer** | *Differenz System (Dec 2020 - May 2021)*
+- **Software Developer Intern** | *Differenz System (Surat, Gujarat, India)* (Jan 1, 2021 – Jun 30, 2021)
   - Deployed 8+ production-ready web applications.
 
 ---
 
 ### 🎓 **Education**
-- **Diploma in Internet Programming** | *Tav College (2024)*
-- **Bachelor of Technology in IT** | *Uka Tarsadia University (2021)*
+- **AEC in Internet Programming** | *TAV College, Montreal, Quebec, Canada* (Feb 6, 2023 – Jan 15, 2025)
+- **Bachelor of Technology (B.Tech) in IT** | *Chhotubhai Gopalbhai Patel Institute of Technology, UKA Tarsadia University, Bardoli, Gujarat, India* (Jul 19, 2017 – Jul 3, 2021)
 - **French Course** | *Centre pauline julien (Ongoing)*
 
 ---

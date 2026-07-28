@@ -14,16 +14,16 @@ export const education: { title: { fr: string; en: string }; subtitle: { fr: str
     {
       id: 1,
       degree: {
-        fr: "Diplôme en Programmation Internet",
-        en: "Diploma in Internet Programming",
+        fr: "AEC en Programmation Internet",
+        en: "AEC in Internet Programming",
       },
       institution: {
-        fr: "Collège Tav",
-        en: "Tav College",
+        fr: "Collège TAV (Montréal, QC, Canada)",
+        en: "TAV College (Montreal, QC, Canada)",
       },
       date: {
-        fr: "Mar 2023 - Oct 2024",
-        en: "Mar 2023 - Oct 2024",
+        fr: "6 Fév 2023 – 15 Jan 2025 (≈2 ans)",
+        en: "Feb 6, 2023 – Jan 15, 2025 (≈2 yrs)",
       },
       result: {
         fr: "Score: 90+/100",
@@ -33,16 +33,16 @@ export const education: { title: { fr: string; en: string }; subtitle: { fr: str
     {
       id: 2,
       degree: {
-        fr: "Baccalauréat en Technologie de l'Information",
-        en: "Bachelor of Technology in Information Technology",
+        fr: "Baccalauréat en Technologie (B.Tech) en Technologie de l'Information",
+        en: "Bachelor of Technology (B.Tech) in Information Technology",
       },
       institution: {
-        fr: "Université Uka Tarsadia",
-        en: "Uka Tarsadia University",
+        fr: "Chhotubhai Gopalbhai Patel Institute of Technology, Université UKA Tarsadia (Bardoli, Gujarat, Inde)",
+        en: "Chhotubhai Gopalbhai Patel Institute of Technology, UKA Tarsadia University (Bardoli, Gujarat, India)",
       },
       date: {
-        fr: "Aug 2017 - Jun 2021",
-        en: "Aug 2017 - Jun 2021",
+        fr: "19 Juil 2017 – 3 Juil 2021 (4 ans)",
+        en: "Jul 19, 2017 – Jul 3, 2021 (4 yrs)",
       },
       result: {
         fr: "CGPA: 8.93/10",
